@@ -1,0 +1,23 @@
+---
+Name: myproject
+---
+SilverStripe\Core\Manifest\ModuleManifest:
+  project: app
+
+DNADesign\Populate\Populate:
+  truncate_objects:
+    - Page
+    - Position
+    - PositionDescription
+  include_yaml_fixtures:
+    - 'app/fixtures/populate.yml'
+
+---
+Name: mystaticpublishqueue
+After: '#staticpublishqueue'
+---
+SilverStripe\Core\Injector\Injector:
+  SilverStripe\StaticPublishQueue\Publisher:
+    class: SilverStripe\StaticPublishQueue\Publisher\FilesystemPublisher
+    properties:
+      fileExtension: html

@@ -1,0 +1,18 @@
+services:
+  - docker
+  - mysql
+
+before_script:
+  - make npm-run-build
+
+script:
+  - docker run -it -v $(PWD):/app -w /app silverstripecloud/composer:7-apache make deploy
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  on:
+    branch: master
+  local_dir: cache
