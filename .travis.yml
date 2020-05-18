@@ -1,26 +1,25 @@
 os: linux
 language: shell
-
 services:
-  - docker
-  - mysql
-
+- docker
+- mysql
 before_script:
-  - docker-compose run themebuilder npm --prefix app/themes/bulma install
-  - docker-compose run themebuilder npm --prefix app/themes/bulma build
-
+- docker-compose run themebuilder npm --prefix app/themes/bulma install
+- docker-compose run themebuilder npm --prefix app/themes/bulma build
 script:
-  - docker-compose run -e "SS_BASE_URL=//matthew.cle.gg" cli make deploy
-
+- docker-compose run -e "SS_BASE_URL=//matthew.cle.gg" cli make deploy
 before_deploy:
-  - find themes/bulma/*/ -type d -name "node_modules" -prune -o -type f \( -iname \*.css -o -iname \*.jpg -o -iname \*.js \) -exec cp --parents \{\} ./cache \;
-
+- find themes/bulma/*/ -type d -name "node_modules" -prune -o -type f \( -iname \*.css
+  -o -iname \*.jpg -o -iname \*.js \) -exec cp --parents \{\} ./cache \;
 deploy:
   provider: pages
   cleanup: true
-  token: $GITHUB_TOKEN
+  token: "$GITHUB_TOKEN"
   keep_history: true
   on:
     branch: master
   local_dir: cache
   strategy: git
+notifications:
+  slack:
+    secure: gQgqWLVYv6GQeKe0YMIorxt8Rbf16OyXDsLNnUcykFRNmKA7oSzlcLfqDz6aiU1jq5ofbTYrbRF+zrjwh+hh37QLMwx4p2aF1cadoxDXmLCn1/VotZQvAMVHTaemzNgijg2DJnKxm3eC8Tz8hD1ooq1798WtwpopOLfG/jGsb41uoDLIr9S2zQ+jW2b5wv2hMuFwdPqbKHu++L4VjDjnKW9QWTSwJUbZIUAOnaJx3nbgrmma4UwOIEJcZdO6S0h0MuUw8IXAqeoHSVo0oQzMFiE5Sk3SJwaiRUXYR2Ak3Fl0J9vNl6PAs8E11MfXTkS0vmRy5Zowm4wmw4MB+gvEFk01tC0hAn4hwbAZPQjt5ZXDl0IxYI1i9gKlSUz09t14pJ1zFadt+SlwtweRxgQo3GbdHpX4DbHS+oPgZ8oBmJ0LZ9IbMrCWpZ0JZcin429Dqhw/D+UtefSYwj+GFc6BOz1+pJbGqa9HdlzPeYpQv5fQa6OW0GWc29Kv15ew3QeQ6o7DtryYaZizLQDGglJsNoiAx2KI4pP0VTYkCbfefkNBXVCzD+ouNdQvakjj1pZD2ePN4L6Txq15l2cC6pYiq8djarqhc8+8RHDq6mSW36f5ERa4LvcYPgKIjNQz/wgyHZSquHroBt1VONx+lyvimsrrRNimJMo+wFylAN+cKoQ=

@@ -1,0 +1,30 @@
+version: '3.7'
+
+services:
+  themebuilder:
+    image: node:alpine
+    volumes:
+      - ${PWD}:/app
+
+  cli:
+    command: make deploy
+    image: silverstripecloud/composer
+    links:
+      - database:database
+    environment:
+      - SS_DATABASE_SERVER=database
+      - SS_DATABASE_USERNAME=root
+      - SS_DATABASE_CHOOSE_NAME=1
+      - SS_ENVIRONMENT_TYPE=test
+    volumes:
+      - ${PWD}:/var/www/html
+    depends_on:
+      - database
+
+  database:
+    image: mariadb
+    restart: always
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=true
+    cap_add:
+      - SYS_NICE  # CAP_SYS_NICE
