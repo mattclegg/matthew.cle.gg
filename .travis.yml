@@ -6,10 +6,12 @@ services:
 before_script:
 - docker-compose run themebuilder npm --prefix app/themes/bulma install
 - docker-compose run themebuilder npm --prefix app/themes/bulma run build
-script:
-- docker-compose run -e "SS_BASE_URL=//matthew.cle.gg" cli make deploy
-before_deploy:
 - find themes/bulma/*/ -type d -name "node_modules" -prune -o -type f \( -iname *.css -o -iname *.jpg -o -iname *.js \) -exec cp --parents {} ./cache \;
+script:
+- ls -l
+- docker-compose run -e "SS_BASE_URL=//matthew.cle.gg" cli make deploy
+- ls -l
+- tree
 deploy:
   provider: pages
   cleanup: true
