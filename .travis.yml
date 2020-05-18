@@ -9,9 +9,9 @@ before_script:
 - find themes/bulma/*/ -type d -name "node_modules" -prune -o -type f \( -iname *.css -o -iname *.jpg -o -iname *.js \) -exec cp --parents {} ./cache \;
 script:
 - ls -l
-- docker-compose run -e "SS_BASE_URL=//matthew.cle.gg" cli make deploy
-- ls -l
-- tree
+- docker-compose run --user `id -u` -e "SS_BASE_URL=//matthew.cle.gg" cli make deploy
+- ls -l cache
+- export
 deploy:
   provider: pages
   cleanup: true
