@@ -5,5 +5,17 @@
         "silverstripe/staticpublishqueue": "dev-master",
         "drmartingonzo/staticpublishqueue-minify": "dev-master",
         "grasenhiller/silverstripe-wkhtmltox": "^1.0"
+    },
+    "extra": {
+        "project-files-installed": [
+            "app/.htaccess",
+            "app/_config.php",
+            "app/_config/mysite.yml"
+        ],
+        "public-files-installed": [
+            ".htaccess",
+            "index.php",
+            "web.config"
+        ]
     }
 }

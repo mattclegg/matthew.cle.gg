@@ -13,47 +13,10 @@ help: ## Display usage
 
 
 
-
-.PHONY: install
-install: ## Run composer install
+.PHONY: deploy
+deploy:
 	composer install
 	vendor/bin/sake dev/build
 	vendor/bin/sake dev/tasks/DNADesign-Populate-PopulateTask
-
-
-
-.PHONY: queue-clean
-queue-clean: install
-	vendor/bin/sake dev/tasks/Symbiote-QueuedJobs-Tasks-DeleteAllJobsTask confirm=1
-
-
-
-.PHONY: queue-build
-queue-build: queue-clean
 	vendor/bin/sake dev/tasks/SilverStripe-StaticPublishQueue-Task-StaticCacheFullBuildTask
-
-
-
-.PHONY: queue-process
-queue-process:
 	vendor/bin/sake dev/tasks/ProcessJobQueueTask
-
-
-
-.PHONY: npm-install
-npm-install: ## Run npm install
-	docker run -it -v ${PWD}/themes/bulma:/app -w /app node:alpine npm install
-
-
-
-.PHONY: npm-run-build
-npm-run-build: npm-install ## Run npm run build
-	docker run -it -v ${PWD}/themes/bulma:/app -w /app node:alpine npm run build
-	find themes/bulma/*/ -type d -name "node_modules" -prune -o -type f \( -iname \*.css -o -iname \*.jpg -o -iname \*.js \) -exec cp --parents \{\} ./cache \;
-
-
-
-.PHONY: deploy
-deploy: ## Run static build cache (locally)
-	make queue-build
-	make queue-process
