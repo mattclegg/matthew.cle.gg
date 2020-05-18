@@ -40,8 +40,14 @@ queue-process:
 
 
 
+.PHONY: npm-install
+npm-install: ## Run npm install
+	docker run -it -v ${PWD}/themes/bulma:/app -w /app node:alpine npm install
+
+
+
 .PHONY: npm-run-build
-npm-run-build: ## Run npm run build
+npm-run-build: npm-install ## Run npm run build
 	docker run -it -v ${PWD}/themes/bulma:/app -w /app node:alpine npm run build
 	find themes/bulma/*/ -type d -name "node_modules" -prune -o -type f \( -iname \*.css -o -iname \*.jpg -o -iname \*.js \) -exec cp --parents \{\} ./cache \;
 
@@ -49,6 +55,5 @@ npm-run-build: ## Run npm run build
 
 .PHONY: deploy
 deploy: ## Run static build cache (locally)
-	make npm-run-build
 	make queue-build
 	make queue-process

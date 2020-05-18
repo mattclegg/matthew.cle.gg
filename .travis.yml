@@ -1,3 +1,5 @@
+language: minimal
+
 services:
   - docker
   - mysql
@@ -6,7 +8,7 @@ before_script:
   - make npm-run-build
 
 script:
-  - docker run -it -v $(PWD):/app -w /app silverstripecloud/composer:7-apache make deploy
+  - docker run -it -v $PWD:/app -w /app silverstripecloud/composer:latest make deploy
 
 deploy:
   provider: pages
