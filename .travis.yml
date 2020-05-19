@@ -11,6 +11,7 @@ script:
 - docker-compose run --user "$TRAVIS_UID" -e "USER=$TRAVIS_UID" -e "SS_BASE_URL=//${TRAVIS_REPO_SLUG#*/}" cli make deploy
 deploy:
   provider: pages
+  skip_cleanup: true
   token: "$GITHUB_TOKEN"
   keep_history: true
   on:
