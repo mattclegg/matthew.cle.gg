@@ -2,19 +2,16 @@ os: linux
 language: shell
 services:
 - docker
-- mysql
 before_script:
 - docker-compose run themebuilder npm --prefix app/themes/bulma install
 - docker-compose run themebuilder npm --prefix app/themes/bulma run build
 - find themes/bulma/*/ -type d -name "node_modules" -prune -o -type f \( -iname *.css -o -iname *.jpg -o -iname *.js \) -exec cp --parents {} ./cache \;
 script:
-- ls -l
-- docker-compose run --user `id -u` -e "SS_BASE_URL=//matthew.cle.gg" cli make deploy
+- docker-compose run --user "$TRAVIS_UID" -e "USER=$TRAVIS_UID" -e "SS_BASE_URL=//matthew.cle.gg" cli make deploy
 - ls -l cache
-- export
 deploy:
   provider: pages
-  cleanup: true
+  cleanup: false
   token: "$GITHUB_TOKEN"
   keep_history: true
   on:
