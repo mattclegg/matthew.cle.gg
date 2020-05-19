@@ -5,13 +5,15 @@ services:
 before_script:
 - docker-compose run themebuilder npm --prefix app/themes/bulma install
 - docker-compose run themebuilder npm --prefix app/themes/bulma run build
-- find themes/bulma/*/ -type d -name "node_modules" -prune -o -type f \( -iname *.css -o -iname *.jpg -o -iname *.js \) -exec cp --parents {} ./cache \;
+- find themes/bulma/*/ -type d -name "node_modules" -prune -o -type f \( -iname *.css -o -iname *.jpg -o -iname *.js \) -exec cp --parents \{\} ./cache \;
+- cp --version
+- cp --help
 script:
-- docker-compose run --user "$TRAVIS_UID" -e "USER=$TRAVIS_UID" -e "SS_BASE_URL=//matthew.cle.gg" cli make deploy
+- docker-compose run --user "$TRAVIS_UID" -e "USER=$TRAVIS_UID" -e "SS_BASE_URL=//${TRAVIS_REPO_SLUG#*/}" cli make deploy
 - ls -l cache
 deploy:
   provider: pages
-  cleanup: false
+  skip_cleanup: true
   token: "$GITHUB_TOKEN"
   keep_history: true
   on:
