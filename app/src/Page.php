@@ -9,5 +9,15 @@ namespace {
 		private static $belongs_many_many = [
 			'PositionDescription' => PositionDescription::class
 		];
+
+		function Link($action)
+		{
+			$link = parent::Link($action);
+			if ($link == '/') {
+				return $link;
+			} else {
+				return $link . ".html";
+			}
+		}
 	}
 }
