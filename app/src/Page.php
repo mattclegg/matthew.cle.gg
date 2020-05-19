@@ -10,7 +10,7 @@ namespace {
 			'PositionDescription' => PositionDescription::class
 		];
 
-		function Link($action)
+		function Link($action = null)
 		{
 			$link = parent::Link($action);
 			if ($link == '/') {
