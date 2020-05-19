@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "33ce911da6bb5b56f82ac11d457203fa",
+    "content-hash": "07a44b8ad17141a952925b03490098c7",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -351,6 +351,47 @@
             "time": "2018-07-11T02:32:18+00:00"
         },
         {
+            "name": "dompdf/dompdf",
+            "version": "v0.6.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dompdf/dompdf.git",
+                "reference": "cc06008f75262510ee135b8cbb14e333a309f651"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dompdf/dompdf/zipball/cc06008f75262510ee135b8cbb14e333a309f651",
+                "reference": "cc06008f75262510ee135b8cbb14e333a309f651",
+                "shasum": ""
+            },
+            "require": {
+                "phenx/php-font-lib": "0.2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "include/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Ménager",
+                    "email": "fabien.menager@gmail.com"
+                },
+                {
+                    "name": "Brian Sweeney",
+                    "email": "eclecticgeek@gmail.com"
+                }
+            ],
+            "description": "DOMPDF is a CSS 2.1 compliant HTML to PDF converter",
+            "homepage": "https://github.com/dompdf/dompdf",
+            "time": "2015-12-07T04:07:13+00:00"
+        },
+        {
             "name": "drmartingonzo/staticpublishqueue-minify",
             "version": "dev-master",
             "source": {
@@ -457,56 +498,29 @@
             "time": "2020-04-26T11:45:04+00:00"
         },
         {
-            "name": "grasenhiller/silverstripe-wkhtmltox",
-            "version": "1.0.2",
+            "name": "gdmedia/silverstripe-dompdf",
+            "version": "0.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/grasenhiller/silverstripe-wkhtmltox.git",
-                "reference": "261e0a27688d60749e0377c4abae8a4df1d17f23"
+                "url": "https://github.com/guru-digital/silverstripe-dompdf.git",
+                "reference": "83cbab76ba6c3f033459d4bf4f0cb3a5f2e33399"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/grasenhiller/silverstripe-wkhtmltox/zipball/261e0a27688d60749e0377c4abae8a4df1d17f23",
-                "reference": "261e0a27688d60749e0377c4abae8a4df1d17f23",
+                "url": "https://api.github.com/repos/guru-digital/silverstripe-dompdf/zipball/83cbab76ba6c3f033459d4bf4f0cb3a5f2e33399",
+                "reference": "83cbab76ba6c3f033459d4bf4f0cb3a5f2e33399",
                 "shasum": ""
             },
             "require": {
-                "mikehaertl/phpwkhtmltopdf": "^2.3",
-                "silverstripe/framework": "^4"
+                "dompdf/dompdf": "^0.6.0"
             },
-            "type": "silverstripe-vendormodule",
+            "type": "silverstripe-module",
             "extra": {
-                "installer-name": "silverstripe-wkhtmltox"
-            },
-            "autoload": {
-                "psr-4": {
-                    "Grasenhiller\\WkHtmlToX\\": "src/"
-                }
+                "installer-name": "silverstripe-dompdf"
             },
             "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Benedikt Hofstaetter",
-                    "email": "bh@grasenhiller.de"
-                }
-            ],
-            "description": "Create pdfs and images out of SilverStripe with WkHtmlToX",
-            "homepage": "https://github.com/grasenhiller/silverstripe-wkhtmltox",
-            "keywords": [
-                "create image",
-                "create pdf",
-                "generate image",
-                "generate pdf",
-                "pdf",
-                "silverstripe",
-                "wkhtmltoimage",
-                "wkhtmltopdf",
-                "wkhtmltox"
-            ],
-            "time": "2019-03-25T08:08:56+00:00"
+            "description": "SilverStripe PDF Generation via DOMPDF Library",
+            "time": "2015-11-03T21:20:39+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -767,16 +781,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.68",
+            "version": "1.0.69",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "3e4198372276ec99ac3409a21d7c9d1ced9026e4"
+                "reference": "7106f78428a344bc4f643c233a94e48795f10967"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/3e4198372276ec99ac3409a21d7c9d1ced9026e4",
-                "reference": "3e4198372276ec99ac3409a21d7c9d1ced9026e4",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/7106f78428a344bc4f643c233a94e48795f10967",
+                "reference": "7106f78428a344bc4f643c233a94e48795f10967",
                 "shasum": ""
             },
             "require": {
@@ -847,7 +861,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2020-05-12T20:33:44+00:00"
+            "time": "2020-05-18T15:13:39+00:00"
         },
         {
             "name": "m1/env",
@@ -953,133 +967,6 @@
                 "topsort"
             ],
             "time": "2016-11-19T14:58:11+00:00"
-        },
-        {
-            "name": "mikehaertl/php-shellcommand",
-            "version": "1.6.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mikehaertl/php-shellcommand.git",
-                "reference": "8d98d8536e05abafe76a491da87296d824939076"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mikehaertl/php-shellcommand/zipball/8d98d8536e05abafe76a491da87296d824939076",
-                "reference": "8d98d8536e05abafe76a491da87296d824939076",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">= 5.4.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "mikehaertl\\shellcommand\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Härtl",
-                    "email": "haertl.mike@gmail.com"
-                }
-            ],
-            "description": "An object oriented interface to shell commands",
-            "keywords": [
-                "shell"
-            ],
-            "time": "2019-12-20T08:48:10+00:00"
-        },
-        {
-            "name": "mikehaertl/php-tmpfile",
-            "version": "1.1.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mikehaertl/php-tmpfile.git",
-                "reference": "001362513e500ca8006144974c5b8cfc0516015a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mikehaertl/php-tmpfile/zipball/001362513e500ca8006144974c5b8cfc0516015a",
-                "reference": "001362513e500ca8006144974c5b8cfc0516015a",
-                "shasum": ""
-            },
-            "require-dev": {
-                "phpunit/phpunit": ">4.0 <8"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "mikehaertl\\tmp\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Härtl",
-                    "email": "haertl.mike@gmail.com"
-                }
-            ],
-            "description": "A convenience class for temporary files",
-            "keywords": [
-                "files"
-            ],
-            "time": "2020-05-06T07:28:50+00:00"
-        },
-        {
-            "name": "mikehaertl/phpwkhtmltopdf",
-            "version": "2.4.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mikehaertl/phpwkhtmltopdf.git",
-                "reference": "82ed9ee7394b1d88055f294aede4b1851ea27c7c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mikehaertl/phpwkhtmltopdf/zipball/82ed9ee7394b1d88055f294aede4b1851ea27c7c",
-                "reference": "82ed9ee7394b1d88055f294aede4b1851ea27c7c",
-                "shasum": ""
-            },
-            "require": {
-                "mikehaertl/php-shellcommand": "^1.5.0",
-                "mikehaertl/php-tmpfile": "^1.1.0",
-                "php": ">=5.0.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "mikehaertl\\wkhtmlto\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Haertl",
-                    "email": "haertl.mike@gmail.com"
-                }
-            ],
-            "description": "A slim PHP wrapper around wkhtmltopdf with an easy to use and clean OOP interface",
-            "homepage": "http://mikehaertl.github.com/phpwkhtmltopdf/",
-            "keywords": [
-                "pdf",
-                "wkhtmltoimage",
-                "wkhtmltopdf"
-            ],
-            "time": "2019-08-17T07:53:19+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -1262,6 +1149,40 @@
                 "php"
             ],
             "time": "2020-04-10T16:34:50+00:00"
+        },
+        {
+            "name": "phenx/php-font-lib",
+            "version": "0.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PhenX/php-font-lib.git",
+                "reference": "c30c7fc00a6b0d863e9bb4c5d5dd015298b2dc82"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PhenX/php-font-lib/zipball/c30c7fc00a6b0d863e9bb4c5d5dd015298b2dc82",
+                "reference": "c30c7fc00a6b0d863e9bb4c5d5dd015298b2dc82",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "classes/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Ménager",
+                    "email": "fabien.menager@gmail.com"
+                }
+            ],
+            "description": "A library to read, parse, export and make subsets of different types of font files.",
+            "homepage": "https://github.com/PhenX/php-font-lib",
+            "time": "2014-02-01T15:22:28+00:00"
         },
         {
             "name": "psr/cache",
