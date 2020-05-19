@@ -21,3 +21,6 @@ SilverStripe\Core\Injector\Injector:
     class: SilverStripe\StaticPublishQueue\Publisher\FilesystemPublisher
     properties:
       fileExtension: html
+
+SilverStripe\StaticPublishQueue\Publisher:
+  add_timestamp: true
