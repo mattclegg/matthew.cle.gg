@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   themebuilder:
-    image: node:alpine
+    image: silverstripecloud/theme-bulma
     volumes:
       - ${PWD}:/app
 
