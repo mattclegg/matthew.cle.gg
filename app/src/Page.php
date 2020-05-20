@@ -16,7 +16,7 @@ namespace {
 			if ($link == '/') {
 				return $link;
 			} else {
-				return $link . ".html";
+				return rtrim($link,"/") . ".html";
 			}
 		}
 	}
