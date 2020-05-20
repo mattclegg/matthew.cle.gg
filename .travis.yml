@@ -8,7 +8,7 @@ before_script:
 - docker-compose run themebuilder npm --prefix app/themes/bulma install --verbose && docker-compose run themebuilder npm --prefix app/themes/bulma run build || true
 - find themes/bulma/*/ -type d -name "node_modules" -prune -o -type f \( -iname *.css -o -iname *.jpg -o -iname *.js \) -exec cp --parents \{\} ./cache \;
 script:
-- docker-compose run -e "USER=$TRAVIS_UID" -e "SS_BASE_URL=https://${TRAVIS_REPO_SLUG#*/}" cli make deploy
+- docker-compose run --user "$TRAVIS_UID" -e "USER=$TRAVIS_UID" -e "SS_BASE_URL=https://${TRAVIS_REPO_SLUG#*/}" cli make deploy
 - ls -l cache/
 - ls -Rl /tmp/
 deploy:
