@@ -13,10 +13,15 @@ help: ## Display usage
 
 
 
+.PHONY: install
+install:
+	composer install
+	patch -p1 -d vendor/silverstripe/staticpublishqueue/ < pathinfo.patch
+	vendor/bin/sake dev/build
+
+
 .PHONY: deploy
 deploy:
-	composer install
-	vendor/bin/sake dev/build
 	vendor/bin/sake dev/tasks/DNADesign-Populate-PopulateTask
 	vendor/bin/sake dev/tasks/SilverStripe-StaticPublishQueue-Task-StaticCacheFullBuildTask
 	vendor/bin/sake dev/tasks/ProcessJobQueueTask

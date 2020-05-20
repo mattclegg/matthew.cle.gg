@@ -10,6 +10,7 @@ before_script:
 script:
 - docker-compose run -e "USER=$TRAVIS_UID" -e "SS_BASE_URL=https://${TRAVIS_REPO_SLUG#*/}" cli make deploy
 - ls -l cache/
+- ls -Rl /tmp/
 deploy:
   provider: pages
   skip_cleanup: true
