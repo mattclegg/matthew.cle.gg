@@ -21,7 +21,7 @@ install:
 
 
 .PHONY: deploy
-deploy:
+deploy: install
 	vendor/bin/sake dev/tasks/DNADesign-Populate-PopulateTask
 	vendor/bin/sake dev/tasks/SilverStripe-StaticPublishQueue-Task-StaticCacheFullBuildTask
 	vendor/bin/sake dev/tasks/ProcessJobQueueTask
