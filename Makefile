@@ -17,6 +17,7 @@ help: ## Display usage
 install:
 	composer install
 	patch -p1 -d vendor/silverstripe/staticpublishqueue/ < pathinfo.patch
+	patch -p1 -d vendor/symbiote/silverstripe-queuedjobs/ < CheckJobHealthTask.patch
 	vendor/bin/sake dev/build
 
 

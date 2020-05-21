@@ -974,12 +974,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mattclegg/silverstripe-dompdf.git",
-                "reference": "18613cd730b30d7a21033b80c97ed6128268d624"
+                "reference": "39169efebb7adc7d51e7f6673c8e2e512f2e2223"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mattclegg/silverstripe-dompdf/zipball/18613cd730b30d7a21033b80c97ed6128268d624",
-                "reference": "18613cd730b30d7a21033b80c97ed6128268d624",
+                "url": "https://api.github.com/repos/mattclegg/silverstripe-dompdf/zipball/39169efebb7adc7d51e7f6673c8e2e512f2e2223",
+                "reference": "39169efebb7adc7d51e7f6673c8e2e512f2e2223",
                 "shasum": ""
             },
             "require": {
@@ -1003,7 +1003,7 @@
                     "homepage": "https://matthew.cle.gg"
                 }
             ],
-            "time": "2020-05-21T10:04:53+00:00"
+            "time": "2020-05-21T11:48:32+00:00"
         },
         {
             "name": "monolog/monolog",

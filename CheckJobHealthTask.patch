@@ -1,0 +1,18 @@
+42c42
+<         $jobHealth = $this->getService()->checkJobHealth($queue);
+---
+>         $stalledJobCount = $this->getService()->checkJobHealth($queue);
+44,53c44,45
+<         $stalledJobCount = 0;
+<         foreach ($jobHealth as $type => $count) {
+<             $stalledJobCount = $stalledJobCount + $count;
+<             echo 'Detected and attempted restart on ' . $count . ' ' . $type . ' jobs';
+<         }
+<         if( $stalledJobCount === 0 ) {
+<             echo 'All jobs are healthy';
+<         } else {
+<             die(1);
+<         }
+---
+>         echo $stalledJobCount === 0 ? 'All jobs are healthy' : 'Detected and attempted restart on ' . $stalledJobCount .
+>             ' stalled jobs';
