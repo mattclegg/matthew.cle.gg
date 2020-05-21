@@ -1,18 +1,39 @@
-42c42
-<         $jobHealth = $this->getService()->checkJobHealth($queue);
+From 2b8e1dc7fd6e83d9cee541a1f0314d96231beb3d Mon Sep 17 00:00:00 2001
+From: Matt Clegg <m@cle.gg>
+Date: Thu, 21 May 2020 23:03:47 +0545
+Subject: [PATCH] BUGFIX: ['stalled'] needs to be defined to return
+
 ---
->         $stalledJobCount = $this->getService()->checkJobHealth($queue);
-44,53c44,45
-<         $stalledJobCount = 0;
-<         foreach ($jobHealth as $type => $count) {
-<             $stalledJobCount = $stalledJobCount + $count;
-<             echo 'Detected and attempted restart on ' . $count . ' ' . $type . ' jobs';
-<         }
-<         if( $stalledJobCount === 0 ) {
-<             echo 'All jobs are healthy';
-<         } else {
-<             die(1);
-<         }
----
->         echo $stalledJobCount === 0 ? 'All jobs are healthy' : 'Detected and attempted restart on ' . $stalledJobCount .
->             ' stalled jobs';
+ src/Tasks/CheckJobHealthTask.php | 16 ++++++++++++----
+ 1 file changed, 12 insertions(+), 4 deletions(-)
+
+diff --git a/src/Tasks/CheckJobHealthTask.php b/src/Tasks/CheckJobHealthTask.php
+index f2c5066..6d4d54d 100644
+--- a/src/Tasks/CheckJobHealthTask.php
++++ b/src/Tasks/CheckJobHealthTask.php
+@@ -39,10 +39,18 @@ class CheckJobHealthTask extends BuildTask
+     {
+         $queue = $request->requestVar('queue') ?: QueuedJob::QUEUED;
+ 
+-        $stalledJobCount = $this->getService()->checkJobHealth($queue);
+-
+-        echo $stalledJobCount === 0 ? 'All jobs are healthy' : 'Detected and attempted restart on ' . $stalledJobCount .
+-            ' stalled jobs';
++        $jobHealth = $this->getService()->checkJobHealth($queue);
++
++        $stalledJobCount = 0;
++        foreach ($jobHealth as $type => $count) {
++            $stalledJobCount = $stalledJobCount + $count;
++            echo 'Detected and attempted restart on ' . $count . ' ' . $type . ' jobs';
++        }
++        if( $stalledJobCount === 0 ) {
++            echo 'All jobs are healthy';
++        } else {
++            die(1);
++        }
+     }
+ 
+     protected function getService()
+-- 
+2.23.0
+
