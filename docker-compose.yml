@@ -4,7 +4,7 @@ services:
   themebuilder:
     image: silverstripecloud/theme-bulma
     volumes:
-      - ${PWD}:/app
+      - ${PWD}/themes/bulma:/app
 
   cli:
     command: make deploy

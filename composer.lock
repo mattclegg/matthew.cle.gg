@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cab02587f7b361b1ab8eb66acb0724d4",
+    "content-hash": "a7627721314b17f7cd12b79b97155887",
     "packages": [
         {
             "name": "asyncphp/doorman",
@@ -971,15 +971,31 @@
         {
             "name": "mattclegg/silverstripe-dompdf",
             "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mattclegg/silverstripe-dompdf.git",
+                "reference": "18613cd730b30d7a21033b80c97ed6128268d624"
+            },
             "dist": {
-                "type": "path",
-                "url": "../src/mattclegg/silverstripe-dompdf",
-                "reference": "6765b08664af73ca4a929ab4f8f04f3fb00aef83"
+                "type": "zip",
+                "url": "https://api.github.com/repos/mattclegg/silverstripe-dompdf/zipball/18613cd730b30d7a21033b80c97ed6128268d624",
+                "reference": "18613cd730b30d7a21033b80c97ed6128268d624",
+                "shasum": ""
             },
             "require": {
-                "dompdf/dompdf": "^0.8"
+                "dompdf/dompdf": "^0.8",
+                "silverstripe/framework": "4.x-dev"
             },
             "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "MattClegg\\dompdf\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
             "authors": [
                 {
                     "name": "Matthew Clegg",
@@ -987,9 +1003,7 @@
                     "homepage": "https://matthew.cle.gg"
                 }
             ],
-            "transport-options": {
-                "symlink": true
-            }
+            "time": "2020-05-21T10:04:53+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -1253,55 +1267,6 @@
             "description": "A library to read, parse and export to PDF SVG files.",
             "homepage": "https://github.com/PhenX/php-svg-lib",
             "time": "2020-02-09T18:50:22+00:00"
-        },
-        {
-            "name": "phpdocumentor/reflection-docblock",
-            "version": "2.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
-                "reference": "e6a969a640b00d8daa3c66518b0405fb41ae0c4b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/e6a969a640b00d8daa3c66518b0405fb41ae0c4b",
-                "reference": "e6a969a640b00d8daa3c66518b0405fb41ae0c4b",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.0"
-            },
-            "suggest": {
-                "dflydev/markdown": "~1.0",
-                "erusev/parsedown": "~1.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-0": {
-                    "phpDocumentor": [
-                        "src/"
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Mike van Riel",
-                    "email": "mike.vanriel@naenius.com"
-                }
-            ],
-            "time": "2016-01-25T08:17:30+00:00"
         },
         {
             "name": "psr/cache",
@@ -1627,68 +1592,6 @@
                 "stylesheet"
             ],
             "time": "2019-02-22T07:42:52+00:00"
-        },
-        {
-            "name": "silverleague/ideannotator",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/silverleague/silverstripe-ideannotator.git",
-                "reference": "18bf94634edd6bd38b258e329f3b55131370d96f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/silverleague/silverstripe-ideannotator/zipball/18bf94634edd6bd38b258e329f3b55131370d96f",
-                "reference": "18bf94634edd6bd38b258e329f3b55131370d96f",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.6.0",
-                "phpdocumentor/reflection-docblock": "^2.0@dev",
-                "silverstripe/framework": "^4"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^5.7",
-                "scriptfusion/phpunit-immediate-exception-printer": "^1",
-                "squizlabs/php_codesniffer": "^3.0"
-            },
-            "type": "silverstripe-vendormodule",
-            "extra": {
-                "branch-alias": {
-                    "3.x-dev": "3.1.x-dev",
-                    "dev-master": "3.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "SilverLeague\\IDEAnnotator\\": "src/",
-                    "SilverLeague\\IDEAnnotator\\Tests\\": "tests/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Martijn van Nieuwenhoven",
-                    "email": "info@axyrmedia.nl"
-                },
-                {
-                    "name": "Simon 'Firesphere' Erkelens",
-                    "email": "simonerkelens@silverstripe.com"
-                }
-            ],
-            "description": "Generate PHP DocBlock annotations for DataObject and DataExtension databasefields and relation methods",
-            "keywords": [
-                "annotations",
-                "database",
-                "docblock",
-                "ide",
-                "orm",
-                "silverstripe"
-            ],
-            "time": "2019-08-21T21:28:23+00:00"
         },
         {
             "name": "silverstripe/admin",
@@ -3522,8 +3425,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drmartingonzo/staticpublishqueue-minify": 20,
-        "mattclegg/silverstripe-dompdf": 20,
-        "silverleague/ideannotator": 20
+        "mattclegg/silverstripe-dompdf": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
