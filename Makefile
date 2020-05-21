@@ -25,6 +25,7 @@ deploy: install
 	vendor/bin/sake dev/tasks/DNADesign-Populate-PopulateTask
 	vendor/bin/sake dev/tasks/SilverStripe-StaticPublishQueue-Task-StaticCacheFullBuildTask
 	vendor/bin/sake dev/tasks/ProcessJobQueueTask
+	vendor/bin/sake dev/tasks/CheckJobHealthTask
 
 themebuilder-dev:
 	docker-compose run -w /app themebuilder npm run watch
