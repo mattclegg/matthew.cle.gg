@@ -1,10 +1,10 @@
 {
+    "minimum-stability": "dev",
     "require": {
         "silverstripe/recipe-core": "^4.5",
         "dnadesign/silverstripe-populate": "^2.0",
-        "silverstripe/staticpublishqueue": "dev-master",
         "drmartingonzo/staticpublishqueue-minify": "dev-master",
-        "gdmedia/silverstripe-dompdf": "^0.0.1"
+        "mattclegg/silverstripe-dompdf": "dev-master"
     },
     "extra": {
         "project-files-installed": [
