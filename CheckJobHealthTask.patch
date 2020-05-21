@@ -1,32 +1,34 @@
-From 2b8e1dc7fd6e83d9cee541a1f0314d96231beb3d Mon Sep 17 00:00:00 2001
+From 8e1e3239664c8c361a2c34fc879ced93d541aad9 Mon Sep 17 00:00:00 2001
 From: Matt Clegg <m@cle.gg>
 Date: Thu, 21 May 2020 23:03:47 +0545
 Subject: [PATCH] BUGFIX: ['stalled'] needs to be defined to return
 
 ---
- src/Tasks/CheckJobHealthTask.php | 16 ++++++++++++----
- 1 file changed, 12 insertions(+), 4 deletions(-)
+ src/Tasks/CheckJobHealthTask.php | 16 +++++++++++++---
+ 1 file changed, 13 insertions(+), 3 deletions(-)
 
 diff --git a/src/Tasks/CheckJobHealthTask.php b/src/Tasks/CheckJobHealthTask.php
-index f2c5066..6d4d54d 100644
+index f2c5066..17df200 100644
 --- a/src/Tasks/CheckJobHealthTask.php
 +++ b/src/Tasks/CheckJobHealthTask.php
-@@ -39,10 +39,18 @@ class CheckJobHealthTask extends BuildTask
+@@ -38,11 +38,21 @@ class CheckJobHealthTask extends BuildTask
+     public function run($request)
      {
          $queue = $request->requestVar('queue') ?: QueuedJob::QUEUED;
++        $jobHealth = $this->getService()->checkJobHealth($queue);
  
 -        $stalledJobCount = $this->getService()->checkJobHealth($queue);
--
++        $unhealthyJobCount = 0;
+ 
 -        echo $stalledJobCount === 0 ? 'All jobs are healthy' : 'Detected and attempted restart on ' . $stalledJobCount .
 -            ' stalled jobs';
-+        $jobHealth = $this->getService()->checkJobHealth($queue);
-+
-+        $stalledJobCount = 0;
-+        foreach ($jobHealth as $type => $count) {
-+            $stalledJobCount = $stalledJobCount + $count;
++        foreach ( $jobHealth as $type => $IDs ) {
++            $count = count($IDs);
 +            echo 'Detected and attempted restart on ' . $count . ' ' . $type . ' jobs';
++            $unhealthyJobCount = $unhealthyJobCount + $count;
 +        }
-+        if( $stalledJobCount === 0 ) {
++
++        if( $unhealthyJobCount === 0 ) {
 +            echo 'All jobs are healthy';
 +        } else {
 +            die(1);
