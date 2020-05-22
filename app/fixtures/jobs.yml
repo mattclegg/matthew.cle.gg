@@ -1,47 +1,3 @@
-Page:
-  web:
-    Title: Web Technologist
-    MenuTitle: web
-    URLSegment: home
-
-  aws:
-    Title: AWS Developer
-    MenuTitle: AWS
-    URLSegment: aws
-  docker:
-    Title: Docker Enthusiast
-    MenuTitle: Docker
-    URLSegment: docker
-  k8s:
-    Title: Kubernetes Administrator
-    MenuTitle: K8s
-    URLSegment: k8s
-  people:
-    Title: People Person
-    MenuTitle: People
-    URLSegment: people-management
-  php:
-    Title: PHP Developer
-    MenuTitle: PHP
-    URLSegment: php
-  python:
-    Title: Python Developer
-    MenuTitle: Python
-    URLSegment: python
-  security:
-    Title: Security Engineer
-    MenuTitle: DevSecOps
-    URLSegment: devsecops
-  shell:
-    Title: Linux Administrator
-    MenuTitle: shell
-    URLSegment: shell
-  ss:
-    Title: SilverStripe Developer
-    MenuTitle: SilverStripe
-    URLSegment: silverstripe
-
-
 Position:
 #  :
 #    Title:
@@ -114,13 +70,13 @@ Position:
     Location: Walsall, The Midlands
     Date: 2006 – 2008
 
-  logicomm_linux:
+  logicomm:
     Title: Support Engineer
     Company: Logicomm 2000
     Location: Bridgetown, The Midlands
     Date: 2004 – 2006
 
-  kingston_people:
+  kingston:
     Title: Recruitment consultant
     Company: Kingston Employment
     Location: Cannock, The Midlands
@@ -130,7 +86,7 @@ Position:
 
 PositionDescription:
   personio_web:
-    Pages: "`Page::get()->filter('URLSegment',['home','aws','docker','k8s','people','php','python','devsecops','shell'])->columnUnique()`;"
+    Pages: "`Page::get()->filter('URLSegment',['home','aws','docker','k8s','people-are-important','php','python','devsecops','shell'])->columnUnique()`;"
     PositionID: =>Position.personio
     Content: >-
       Responsible for automating everything from A to Z using Terraform, Ansible, AWS lambda functions, etc. I was responsible for supporting team of SREs in monitoring the platform using logs, metrics, tracing, amongst other observability stacks such as ELK and NewRelic. I advised product teams on topics such as automation and architecture. I aimed to enhance teams in regards to communication, collaboration and integration between software developers and infrastructure stakeholders in the software delivery lifecycle.
@@ -138,7 +94,7 @@ PositionDescription:
       I aimed to improve their existing platform concerning scalability, deployments and reliability so they require less maintenance in the future. I supported the internal team on operations topics regarding deployment & automation. I provided training sessions for keen developers to attend regarding Docker & Kubernetes.
 
   freeletics_web:
-    Pages: "`Page::get()->filter('URLSegment',['home','aws','docker','k8s','people','php','python','devsecops','shell'])->columnUnique()`;"
+    Pages: "`Page::get()->filter('URLSegment',['home','aws','docker','k8s','people-are-important','php','python','devsecops','shell'])->columnUnique()`;"
     PositionID: =>Position.freeletics
     Content: >
       During my time at Freeletics I was responsible for running their heavily used platform to sustain the api/web services 24x7. I completed this by monitoring the platform to know of issues before users and proactively responding to maintain the system.
@@ -160,20 +116,20 @@ PositionDescription:
       Involved from scope to deployment for both Front-end / Back-end PHP Web development work of Unlockbootloader service as a WordPress plugin. Various bug-fixing of existing Sony website themes and customisations to WordPress CMS requested by editors. Using metric APIs to generate reports and assisting with fika requirements.
 
   other_web:
-    Pages: "`Page::get()->filter('URLSegment',['home','docker','people','php','devsecops','shell','silverstripe'])->columnUnique()`;"
+    Pages: "`Page::get()->filter('URLSegment',['home','docker','people-are-important','php','devsecops','shell','silverstripe'])->columnUnique()`;"
     PositionID: =>Position.other
     Content: |
       Involved from scope to deployment of digital projects for both Front-end / Back-end (PHP / ASP) web
       #developments for various marketing campaign websites for mainly financial corporations. Responsible for scoping additional features, training other developers, ongoing maintenance, on-call support for infrastructure.
 
   jacobbailey_web:
-    Pages: "`Page::get()->filter('URLSegment',['home','people','php','devsecops','shell','silverstripe'])->columnUnique()`;"
+    Pages: "`Page::get()->filter('URLSegment',['home','people-are-important','php','devsecops','shell','silverstripe'])->columnUnique()`;"
     PositionID: =>Position.jacobbailey
     Content: |
       Various high performance and large content websites mainly for Suffolk County Council. Ongoing maintenance / improvements on a high security website that provides support and funding for children with disabilities, Suffolk Council Informational services website, and Suffolk County Music Service Educational website.
 
   redwood_web:
-    Pages: "`Page::get()->filter('URLSegment',['home','people','php','shell'])->columnUnique()`;"
+    Pages: "`Page::get()->filter('URLSegment',['home','people-are-important','php','shell'])->columnUnique()`;"
     PositionID: =>Position.redwood
     Content: |
       Weekly published online TV guide for Virgin Media. General site maintenance / optimisation and created a plugin for maintaining nodes via Rackspace API. Patched PHP SDK for OpenCloud to provide usable responses from OpenStack API.
@@ -191,13 +147,13 @@ PositionDescription:
       Magento website for department store Fenwick. Checkout integration, server configuration, general front end optimisation, and 1 on 1 Magento training with the companies senior PM.
 
   trinity_web:
-    Pages: "`Page::get()->filter('URLSegment',['home','people','php','devsecops','shell','silverstripe'])->columnUnique()`;"
+    Pages: "`Page::get()->filter('URLSegment',['home','people-are-important','php','devsecops','shell','silverstripe'])->columnUnique()`;"
     PositionID: =>Position.trinity
     Content: |
       Marketing for small local businesses in the Midlands. Created over 150 unique websites with only 1 other (front end) developer during 18 month period including a business `social network` resource for Solihull council.
 
   computerguy_web:
-    Pages: "`Page::get()->filter('URLSegment',['home','people','php','devsecops','shell'])->columnUnique()`;"
+    Pages: "`Page::get()->filter('URLSegment',['home','people-are-important','php','devsecops','shell'])->columnUnique()`;"
     PositionID: =>Position.computerguy
     Content: |
       I created (or amended) custom open source web scripts in PHP, and developed JavaScript’s for web applications. I also designed & developed Windows based software to work with a cost effective (Linux) database servers, for managing stock/sales etc.

@@ -1,0 +1,46 @@
+Page:
+  web:
+    Title: Web Technologist
+    MenuTitle: web
+    URLSegment: home
+
+  aws:
+    Title: AWS Developer
+    MenuTitle: AWS
+    URLSegment: aws
+  docker:
+    Title: Docker Enthusiast
+    MenuTitle: Docker
+    URLSegment: docker
+  k8s:
+    Title: Kubernetes Administrator
+    MenuTitle: K8s
+    URLSegment: k8s
+  people:
+    Title: People Person
+    MenuTitle: People
+    URLSegment: people-are-important
+  php:
+    Title: PHP Developer
+    MenuTitle: PHP
+    URLSegment: php
+  python:
+    Title: Python Developer
+    MenuTitle: Python
+    URLSegment: python
+  security:
+    Title: Security Engineer
+    MenuTitle: DevSecOps
+    URLSegment: devsecops
+  shell:
+    Title: Linux Administrator
+    MenuTitle: shell
+    URLSegment: shell
+  ss:
+    Title: SilverStripe Developer
+    MenuTitle: SilverStripe
+    URLSegment: silverstripe
+  support:
+    Title: Support Engineer
+    MenuTitle: Support
+    URLSegment: support

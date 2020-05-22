@@ -10,17 +10,18 @@ DNADesign\Populate\Populate:
     - Position
     - PositionDescription
   include_yaml_fixtures:
-    - 'app/fixtures/populate.yml'
+    - 'app/fixtures/roles.yml'
+    - 'app/fixtures/jobs.yml'
+    - 'app/fixtures/job_kaplan.yml'
 
 ---
 Name: mystaticpublishqueue
-After: '#staticpublishqueue'
+After: '#staticpublishqueueminify'
 ---
 SilverStripe\Core\Injector\Injector:
   SilverStripe\StaticPublishQueue\Publisher:
-    class: SilverStripe\StaticPublishQueue\Publisher\FilesystemPublisher
     properties:
       fileExtension: html
 
 SilverStripe\StaticPublishQueue\Publisher:
-  add_timestamp: true
+  add_timestamp: false
