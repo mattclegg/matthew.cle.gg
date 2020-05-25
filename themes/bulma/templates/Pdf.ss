@@ -39,42 +39,48 @@
 <hr style="background:#616161;"/>
 <% loop $SortedPositionDescription %>
 	<table>
-		<% with $Position %>
-			<thead>
-				<tr>
-					<th>
-						<h3>$Title</h3>
-					</th>
-					<th>
-						<address>$Location</address>
-					</th>
-					<th>
-						<time>
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-							$Date
-						</time>
-					</th>
-				</tr>
-			</thead>
-		<% end_with %>
-		<tbody>
-			<tr>
-				<td colspan="3">
-					$Content
-				</td>
-			</tr>
-		</tbody>
-		<tfoot>
-			<tr>
-				<td colspan="3">
-					<% loop $OtherPages($Top.ID) %>
-						<a class="tag" href="$Link" title="$MenuTitle.XML">$Tag</a>
-					<% end_loop %>
-				</td>
-			</tr>
-		</tfoot>
+		<tr>
+			<td>
+				<table>
+					<% with $Position %>
+						<thead>
+							<tr>
+								<th>
+									<h3>$Title</h3>
+								</th>
+								<th>
+									<address>$Location</address>
+								</th>
+								<th>
+									<time>
+										<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+										$Date
+									</time>
+								</th>
+							</tr>
+						</thead>
+					<% end_with %>
+					<tbody>
+						<tr>
+							<td colspan="3">
+								$Content
+							</td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="3">
+								<% loop $OtherPages($Top.ID) %>
+									<a class="tag" href="$Link" title="$MenuTitle.XML">$Tag</a>
+								<% end_loop %>
+							</td>
+						</tr>
+					</tfoot>
+				</table>
+				<hr/>
+			</td>
+		</tr>
 	</table>
-	<hr/>
 <% end_loop %>
 <footer>
 	<h6>Hobbies &amp; interests</h6>
