@@ -20,8 +20,7 @@ After: '#staticpublishqueueminify'
 ---
 SilverStripe\Core\Injector\Injector:
   SilverStripe\StaticPublishQueue\Publisher:
-    properties:
-      fileExtension: html
+    class: FilesystemPublisher
 
 SilverStripe\StaticPublishQueue\Publisher:
   add_timestamp: false

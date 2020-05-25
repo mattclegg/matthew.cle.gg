@@ -6,6 +6,8 @@ namespace {
 
 	class Position extends DataObject
 	{
+		private static $table_name = 'Position';
+
 		private static $db = [
 			"Title" => "Text",
 			"Company" => "Text",

@@ -37,7 +37,7 @@
 			<blockquote>Skilled in automation cloud orchestration tools (Kubernetes, Terraform, Helm, Ansible etc), server-side technologies (Python, PHP, Ruby) & client front-end languages (HTML, CSS and JavaScript). I have experience creating and hosting websites using complex math & basic logic for most common content management systems. My previous work experience includes projects with numerous digital agencies, startups and corporations.</blockquote>
 			<hr>
 			<div class="box">
-				<% loop $PositionDescription %>
+				<% loop $SortedPositionDescription %>
 					<article>
 						<% with $Position %>
 							<hgroup>

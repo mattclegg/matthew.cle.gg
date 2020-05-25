@@ -9,6 +9,8 @@ namespace {
 	 */
 	class PositionDescription extends DataObject
 	{
+		private static $table_name = 'PositionDescription';
+
 		private static $db = [
 			"Content" => "HTMLText"
 		];
