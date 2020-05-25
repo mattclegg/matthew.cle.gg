@@ -2,11 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-<%--	<% base_tag %>--%>
-	<base href="http://localhost/"><!--[if lte IE 6]></base><![endif]-->
+	<base href="http://localhost/$ThemeDir"><!--[if lte IE 6]></base><![endif]-->
 	<title>Matthew.Cle.gg - $Title</title>
-	<% require themedCSS('pdf') %>
-	<link rel="stylesheet" type="text/css" href="http://localhost/$ThemeDir/css/pdf.css" />
+	<link rel="stylesheet" type="text/css" href="//localhost/$ThemeDir/css/pdf.css" />
 </head>
 <body>
 <table>
