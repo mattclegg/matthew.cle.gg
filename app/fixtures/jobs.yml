@@ -89,12 +89,12 @@ PositionDescription:
     Pages: "`Page::get()->filter('URLSegment',['home','aws','docker','k8s','people-are-important','php','python','devsecops','shell'])->columnUnique()`;"
     PositionID: =>Position.personio
     Content: >-
-      Responsible for automating everything from A to Z using Terraform, Ansible, AWS lambda functions, etc. I was responsible for supporting team of SREs in monitoring the platform using logs, metrics, tracing, amongst other observability stacks such as ELK and NewRelic. I advised product teams on topics such as automation and architecture. I aimed to enhance teams in regards to communication, collaboration and integration between software developers and infrastructure stakeholders in the software delivery lifecycle.
+      Responsible for automating everything from A to Z using Terraform, Ansible, AWS lambda functions, etc. I was responsible for supporting a team of SREs in monitoring the platform using logs, metrics, tracing, amongst other observability stacks such as ELK and NewRelic. I advised product teams on topics such as automation and architecture. I aimed to enhance teams in regards to communication, collaboration and integration between software developers and infrastructure stakeholders in the software delivery lifecycle.
       While at Personio I migrated their web services into Kubernetes in AWS using GitLab. I created and managed a GitLab service in an automated fashion. I used the GitLab instance to provision Kubernetes environments in AWS. I migrated all microservices to Kubernetes services in AWS environment using direct connect.
       I aimed to improve their existing platform concerning scalability, deployments and reliability so they require less maintenance in the future. I supported the internal team on operations topics regarding deployment & automation. I provided training sessions for keen developers to attend regarding Docker & Kubernetes.
 
   freeletics_web:
-    Pages: "`Page::get()->filter('URLSegment',['home','aws','docker','k8s','people-are-important','php','python','devsecops','shell'])->columnUnique()`;"
+    Pages: "`Page::get()->filter('URLSegment',['home','aws','docker','k8s','people-are-important','python','devsecops','shell'])->columnUnique()`;"
     PositionID: =>Position.freeletics
     Content: >
       During my time at Freeletics I was responsible for running their heavily used platform to sustain the api/web services 24x7x365. I completed this by monitoring the platform to know of issues before users and proactively responding to maintain the system.
