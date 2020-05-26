@@ -18,10 +18,10 @@
 						<td rowspan="2">
 							<h1>Matthew Clegg - $Title</h1>
 						</td>
-						<td><a href="m@cle.gg" style="text-decoration: none">m@cle.gg</a></td>
+						<td style="text-align:right;"><a href="m@cle.gg" style="text-decoration: none">m@cle.gg</a></td>
 					</tr>
 					<tr>
-						<td>+44 (0) 7478 575533</td>
+						<td style="text-align:right;">+44 (0) 7478 575533</td>
 					</tr>
 				</table>
 			</th>
