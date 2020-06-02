@@ -1,6 +1,6 @@
 PositionDescription:
   kaplan_web:
-    Pages: "`Page::get()->filter('URLSegment',['home','aws','docker','people','php','python','shell'])->columnUnique()`;"
+    Pages: "`Page::get()->filter('URLSegment',['home','docker','php'])->columnUnique()`;"
     PositionID: =>Position.kaplan
     Content: |
       Automation of cloud hosting environments in AWS (Python) for both Linux & Windows stacks. Configuration management with Puppet (Ruby), involving updating existing modules and creating new modules. General shell scripting for running deployment processes, SQL backups, maintenance, performance tuning etc. Development, maintenance and migration of several large sites from VPS to cloud hosting in AWS. Supporting websites using Drupal, Laravel, and Moodle including XHTML markup, advanced CSS, object orientated JavaScript, X-browser testing, responsive layouts etc.
@@ -15,7 +15,7 @@ PositionDescription:
       General shell scripting for running deployment processes, SQL backups, maintenance, and performance tuning completed using Puppet.
 
   kaplan_people:
-    Pages: "`Page::get()->filter('URLSegment',['people-management'])->columnUnique()`;"
+    Pages: "`Page::get()->filter('URLSegment',['people-are-important'])->columnUnique()`;"
     PositionID: =>Position.kaplan
     Content: |
       Support other company teams like operations and product development.

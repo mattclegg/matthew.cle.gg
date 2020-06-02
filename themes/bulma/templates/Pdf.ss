@@ -2,10 +2,19 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<base href="http://localhost/"><!--[if lte IE 6]></base><![endif]-->
+	<base href="http://localhost:8083/"><!--[if lte IE 6]></base><![endif]-->
 	<title>Matthew.Cle.gg - $Title</title>
+	<% require themedCSS('pdf') %>
 	<style>
 		body{font-family:ubuntu mono, DejaVu Sans;font-size:11px}body *{margin:0;padding:0}a{color:darkblue}hr{margin:12px 0 !important}h1,h3{text-align:left}table{width:100%}th{text-align:right;line-height:13px}
+
+	<% loop $SortedPositionDescription %>
+		<% with $Position %>
+		#logo-$ID:after {
+			background-image: url($CompanyLogo64);
+		}
+		<% end_with %>
+	<% end_loop %>
 	</style>
 </head>
 <body>
@@ -59,10 +68,13 @@
 								</th>
 							</tr>
 						</thead>
-					<% end_with %>
 					<tbody>
 						<tr>
-							<td colspan="3">
+							<td colspan="3"
+								class="logo"
+								id="logo-$ID"
+							>
+					<% end_with %>
 								$Content
 							</td>
 						</tr>
