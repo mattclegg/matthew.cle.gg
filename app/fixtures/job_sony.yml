@@ -1,0 +1,25 @@
+PositionDescription:
+  sony_web:
+    Pages:
+      - =>Page.web
+      - =>Page.php
+    PositionID: =>Position.sony
+    Content: |
+      <p>I completed from scope to deployment for both Front-end / Back-end PHP Web development work of Unlockbootloader service to be managed as a plugin with the existing CMS. Various bug-fixing of existing Sony website themes and customisations to WordPress CMS requested by editors. I used Prometheus to generate reports and assisted with Fika requirements.</p>
+
+  sony_aws:
+    Pages:
+      - =>Page.aws
+    PositionID: =>Position.sony
+    Content: |
+      <p>I completed from scope to deployment for both Front-end / Back-end PHP Web development work of Unlockbootloader service to be managed as a plugin with the existing CMS. Various bug-fixing of existing Sony website themes and customisations to WordPress CMS requested by editors. I used Prometheus to generate reports and assisted with Fika requirements.</p>
+      <p>I migrated the Unlockbootloader website from a 3rd party hosting provider to AWS. We set up Jenkins to manage automated deployments to provision quicker releases. I configured metrics to be collected in Prometheus to monitor the application. I also created a service for developers of the LifeLog API to generate and manage their keys by using the API from APIGee.</p>
+      <p>I created an Unlockbootloader service plugin and assisted in automating security PEN test audits. The audit reports helped to detect security flaws as soon as possible. I configured metrics to be collected in Prometheus to monitor the application on dashboards everybody could see which provided a strong feedback loop and allowed to Benchmark & review performance.</p>
+
+  sony_devsecops:
+    Pages:
+      - =>Page.devsecops
+    PositionID: =>Position.sony
+    Content: |
+      <p>I completed from scope to deployment for both Front-end / Back-end PHP Web development work of Unlockbootloader service to be managed as a plugin with the existing CMS. Various bug-fixing of existing Sony website themes and customisations to WordPress CMS requested by editors. I used Prometheus to generate reports and assisted with Fika requirements.</p>
+      <p>I created an Unlockbootloader service plugin and assisted in automating security PEN test audits. The audit reports helped to detect security flaws as soon as possible. I configured metrics to be collected in Prometheus to monitor the application on dashboards everybody could see which provided a strong feedback loop and allowed to Benchmark & review performance.</p>

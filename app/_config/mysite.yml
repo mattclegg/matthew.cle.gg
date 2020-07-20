@@ -10,9 +10,12 @@ DNADesign\Populate\Populate:
     - Position
     - PositionDescription
   include_yaml_fixtures:
-    - 'app/fixtures/roles.yml'
-    - 'app/fixtures/jobs.yml'
-    - 'app/fixtures/job_kaplan.yml'
+    - app/fixtures/roles.yml
+    - app/fixtures/jobs.yml
+    - app/fixtures/job_kaplan.yml
+    - app/fixtures/job_personio.yml
+    - app/fixtures/job_sony.yml
+    - app/fixtures/job_sixt.yml
 
 ---
 Name: mystaticpublishqueue

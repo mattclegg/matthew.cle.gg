@@ -1,0 +1,26 @@
+PositionDescription:
+  sixt_aws:
+    Pages:
+      - =>Page.aws
+      - =>Page.k8s
+      - =>Page.docker
+    PositionID: =>Position.sixt
+    Content: >-
+      <p>Initially configured EKS Clusters via TerraForm to be provisioned from GitlabCI pipeline.</p>
+      <p>I created a Jenkins pipeline framework using Groovy scripts for dockerizing Spring Boot application microservices.</p>
+      <p>I created a framework for deploying a Kafka proxy/zookeeper for creating ephemeral microservice preview environments.</p>
+      <p>I configured API Gateway with TerraForm to run a lambda for deploying generated microservice Kubernetes manifests.</p>
+      <p>I implemented a Prometheus based monitoring solution and synced observability requirements of the Orange Platform.</p>
+
+
+  sixt_devsecops:
+    Pages:
+      - =>Page.devsecops
+    PositionID: =>Position.sixt
+    Content: >-
+      <p>Initially configure EKS Clusters via TerraForm manifest to be provisioned from GitlabCI pipeline.</p>
+      <p>I configured GitCrypt to ensure sensitive information was encrypted when committed to the repository.</p>
+      <p>I created a Jenkins pipeline framework using Groovy scripts for dockerizing Spring Boot application microservices.</p>
+      <p>I created a framework for deploying a Kafka proxy/zookeeper for creating ephemeral microservice preview environments.</p>
+      <p>I configured API Gateway with TerraForm to run a lambda for deploying generated microservice Kubernetes manifests.</p>
+      <p>I implemented a Prometheus based monitoring solution and synced observability requirements of the Orange Platform.</p>

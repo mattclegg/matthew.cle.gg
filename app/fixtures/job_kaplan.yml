@@ -1,13 +1,19 @@
 PositionDescription:
   kaplan_web:
-    Pages: "`Page::get()->filter('URLSegment',['home','docker','php'])->columnUnique()`;"
+    Pages:
+      - =>Page.web
+      - =>Page.docker
+      - =>Page.php
     PositionID: =>Position.kaplan
     Content: |
       Automation of cloud hosting environments in AWS (Python) for both Linux & Windows stacks. Configuration management with Puppet (Ruby), involving updating existing modules and creating new modules. General shell scripting for running deployment processes, SQL backups, maintenance, performance tuning etc. Development, maintenance and migration of several large sites from VPS to cloud hosting in AWS. Supporting websites using Drupal, Laravel, and Moodle including XHTML markup, advanced CSS, object orientated JavaScript, X-browser testing, responsive layouts etc.
       I migrated a Chinese version of their website from SDL Tridion to a cheaper hosting alternative that provided a quicker load time for users in mainland China. I created a script to scrape the content that was publicly available and imported it into a standard Wordpress site. I created a bootstrap theme in a similar design to the previous website. The bootstrap theme made the website responsive for smaller screen devices and provided a pattern library of other components that could be used within the theme, without requiring work of a dedicated designer. I provided training to the marketing content editors for them to review all content that had been imported. There were delays in acquiring an account for AWS China and an alternative solution needed to be provided. I set up identical versions of the site in different regions surrounding China, and a small website that would track how long it takes to load the website from each region for the current user. This website was shared with the offices in Beijing & Shanghai to record which region would provide the fastest hosting to users inside mainland China, without being hosted in China. This was the also first project by the I.T. department to be completed on time and budget.
 
   kaplan_aws:
-    Pages: "`Page::get()->filter('URLSegment',['aws','python','shell'])->columnUnique()`;"
+    Pages:
+      - =>Page.aws
+      - =>Page.python
+      - =>Page.shell
     PositionID: =>Position.kaplan
     Content: |
       Automation migration for several large sites from VPS cloud hosting environments, for both Linux & Windows stacks, to AWS in Europe & China regions.
@@ -15,7 +21,8 @@ PositionDescription:
       General shell scripting for running deployment processes, SQL backups, maintenance, and performance tuning completed using Puppet.
 
   kaplan_people:
-    Pages: "`Page::get()->filter('URLSegment',['people-are-important'])->columnUnique()`;"
+    Pages:
+      - =>Page.people
     PositionID: =>Position.kaplan
     Content: |
       Support other company teams like operations and product development.
@@ -25,7 +32,8 @@ PositionDescription:
       Training of sales & marketing team how to use CMS.
 
   kaplan_support:
-    Pages: "`Page::get()->filter('URLSegment',['support'])->columnUnique()`;"
+    Pages:
+      - =>Page.support
     PositionID: =>Position.kaplan
     Content: |
       Setup monitoring and alerting alert systems.

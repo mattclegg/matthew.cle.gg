@@ -28,7 +28,7 @@ Page:
     Title: Python Developer
     MenuTitle: Python
     URLSegment: python
-  security:
+  devsecops:
     Title: Security Engineer
     MenuTitle: DevSecOps
     URLSegment: devsecops
@@ -36,7 +36,7 @@ Page:
     Title: Linux Administrator
     MenuTitle: shell
     URLSegment: shell
-  ss:
+  silverstripe:
     Title: SilverStripe Developer
     MenuTitle: SilverStripe
     URLSegment: silverstripe
@@ -44,3 +44,7 @@ Page:
     Title: Support Engineer
     MenuTitle: Support
     URLSegment: support
+  terraform:
+    Title: Terraform Developer
+    MenuTitle: Terraform
+    URLSegment: terraform
