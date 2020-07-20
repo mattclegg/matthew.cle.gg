@@ -41,12 +41,7 @@ namespace {
 
         public function PDFLink($action = null)
         {
-            $link = parent::Link($action);
-            if ($link == '/') {
-                return $link;
-            } else {
-                return rtrim($link, "/") . ".pdf";
-            }
+            return FilesystemPublisher::pathToFilename($this->URLSegment);
         }
 
         public function StaticLink($action = null)

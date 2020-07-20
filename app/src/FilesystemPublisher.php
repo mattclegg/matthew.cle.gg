@@ -46,7 +46,7 @@ namespace {
 
 				if ($this->getFileExtension() === 'pdf') {
 					$pdfOutput = $this->generatePDFCacheFile($response);
-					return $this->saveToPath($pdfOutput, $path . '.pdf');
+					return $this->saveToPath($pdfOutput, self::pathToFilename($path));
 				}
 
 				return $this->saveToPath($response->getBody(), $path . '.html');
@@ -87,6 +87,17 @@ namespace {
 			$urlSegments = explode("/", $url);
 			$fileExtension = array_pop($urlSegments);
 			return parent::purgeURL(implode("/", $urlSegments));
+		}
+
+		public static function pathToFilename($path)
+		{
+			$name = "cv-brief__matthew-clegg__";
+			if ($path === 'home') {
+				$name .= 'web-technologist';
+			} else {
+				$name .= $path;
+			}
+			return $name . '.pdf';
 		}
 	}
 }
