@@ -3,6 +3,7 @@ language: shell
 services:
 - docker
 install:
+- docker-compose version
 - docker-compose run --user "$TRAVIS_UID" cli make install
 before_script:
 - mkdir cache
