@@ -2,6 +2,14 @@ os: linux
 language: shell
 services:
 - docker
+env:
+- DOCKER_COMPOSE_VERSION=v2.17.2
+before_install:
+- echo https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m`
+- sudo rm /usr/local/bin/docker-compose
+- curl -L https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-`uname -s`-`uname -m` > docker-compose
+- chmod +x docker-compose
+- sudo mv docker-compose /usr/local/bin
 install:
 - docker-compose version
 - docker-compose run --user "$TRAVIS_UID" cli make install

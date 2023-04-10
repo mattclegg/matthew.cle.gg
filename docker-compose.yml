@@ -4,7 +4,7 @@ services:
   themebuilder:
     image: silverstripecloud/theme-bulma
     volumes:
-      - ${PWD}/themes/bulma:/app
+      - ./themes/bulma:/app
 
   cli:
     command: make deploy
@@ -17,7 +17,7 @@ services:
       - SS_DATABASE_CHOOSE_NAME=1
       - SS_ENVIRONMENT_TYPE=test
     volumes:
-      - ${PWD}:/var/www/html
+      - .:/var/www/html
     depends_on:
       - database
 
