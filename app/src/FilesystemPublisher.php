@@ -91,13 +91,10 @@ namespace {
 
 		public static function pathToFilename($path)
 		{
-			$name = "cv-brief__matthew-clegg__";
 			if ($path === 'home') {
-				$name .= 'web-technologist';
-			} else {
-				$name .= $path;
+				$path = "cv";
 			}
-			return $name . '.pdf';
+			return $path . '.pdf';
 		}
 	}
 }
