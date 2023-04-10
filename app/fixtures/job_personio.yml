@@ -3,14 +3,17 @@ PositionDescription:
     Pages:
       - =>Page.web
       - =>Page.aws
+      - =>Page.cicd
+      - =>Page.devsecops
       - =>Page.docker
       - =>Page.k8s
       - =>Page.php
       - =>Page.python
-      - =>Page.devsecops
       - =>Page.shell
+      - =>Page.terraform
     PositionID: =>Position.personio
     Content: >-
+      Responsible for building and maintaining cloud based infrastructure for SAAS platform used by SME customers.
       Responsible for automating everything from A to Z using Terraform, Ansible, AWS lambda functions, etc.
       I was responsible for supporting a team of SREs in monitoring the platform using logs, metrics, tracing, amongst other observability stacks such as ELK and NewRelic.
       I advised product teams on topics such as automation and architecture.
@@ -23,10 +26,23 @@ PositionDescription:
       I supported the internal team on operations topics regarding deployment & automation.
       I provided training sessions for keen developers to attend regarding Docker & Kubernetes.
 
-
   personio_people:
     Pages:
       - =>Page.people
     PositionID: =>Position.personio
     Content: |
-      One of the main implementations that I made early in the AWS migration project was related to the delivery pipeline. I implemented a procedure for the application to be deployed automatically to AWS for any changes made to the application. I was then able to use this as a platform for training developers from my experience about docker & delivery pipelines. This early training opportunity allowed me to build a report with developers whom I would later be working with to gather technical requirements from them.
+      One of the main implementations that I made early in the AWS migration project was related to the delivery pipeline.
+      I implemented a procedure for the application to be deployed automatically to AWS for any changes made to the application.
+      I was then able to use this as a platform for training developers from my experience about docker & delivery pipelines.
+      This early training opportunity allowed me to build a report with developers whom I would later be working with to gather technical requirements from them.
+
+#  personio_devsecops:
+#    Pages:
+#      - =>Page.devsecops
+#    PositionID: =>Position.personio
+#    Content: >-
+#      GDPR
+#
+#      While at Personio, I documented & scoped for an IPS but didn't start implementation (due to budget).
+#      I was responsible for implementing ACLs for both IAM & K8s.
+#      I also maintained various IDS components.

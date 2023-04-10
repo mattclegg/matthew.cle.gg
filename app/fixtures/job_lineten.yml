@@ -1,0 +1,39 @@
+PositionDescription:
+  lineten_web:
+    Pages:
+      - =>Page.web
+      # Cloud
+      - =>Page.aws
+      - =>Page.azure
+      # Buzzwords
+      - =>Page.devsecops
+      - =>Page.docker
+      - =>Page.k8s
+      # Languages
+#      - =>Page.ASP.NETCore
+#      - =>Page.ballerina
+      - =>Page.go
+      - =>Page.php
+      - =>Page.python
+      - =>Page.shell
+      - =>Page.terraform
+      # Soft skills
+      - =>Page.people
+    PositionID: =>Position.lineten
+    Content: >-
+      Responsible for automating everything from A to Z using Terraform, AWS, Azure, etc.
+      Ensuring ‘the lights stay on’, to deliver the best possible experience to customers.
+      Migrated web services into Docker/Kubernetes from ElasticBeanstalk & migrated from BitBucket to GitLab.
+      Proactively monitored the health of the platform, to detect and resolve threats, defects and outages before they had any meaningful impact on users.
+      Enhanced teams in regards to communication, collaboration and integration between software developers and infrastructure stakeholders in the software delivery lifecycle.
+      Worked closely with product stakeholders, such as designers and product managers to gather requirements and refine problems into focused deliverables.
+      Advised with a pragmatic approach to operation/product teams on topics such as automation, deployments and architecture.
+      Provided training sessions for keen developers to attend regarding Docker & Kubernetes.
+      Responsible for supporting a team of SREs in monitoring the platform using logs, metrics, tracing, amongst other observability.
+      I aimed to improve their existing platform concerning scalability, deployments and reliability so they require less maintenance in the future.
+      I used my start-up mentality to be responsible, energetic, ambitious, adaptable and willing to jump in wherever might be needed.
+
+#Yapily
+#  Good judgment, and aren’t afraid to make decisions and act with purpose and intention to progress Novata’s goals.
+#  Excellent communication skills, and are able to work collaboratively and respectfully with other team members.
+#  Great attention to detail, a no-compromise approach to quality and are committed to delivering the best experience possible to our users.

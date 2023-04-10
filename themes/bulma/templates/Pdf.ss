@@ -28,7 +28,7 @@
 		</tr>
 		<tr>
 			<td>
-				<p>Over <strong>15</strong> years of industry experience, developing with client, server and infrastructure technologies. Skilled in automation cloud orchestration tools (Kubernetes, Terraform, Helm, Ansible etc), server-side technologies (Python, PHP, Ruby) & client front-end languages (HTML, CSS and JavaScript). I have experience creating and hosting websites using complex math & basic logic for most common content management systems. My previous work experience includes projects with numerous digital agencies, startups and corporations.</p>
+				<p>Over <strong>$ExperienceYears</strong> of industry experience, developing with client, server and infrastructure technologies. Skilled in automation cloud orchestration tools (Kubernetes, Terraform, Helm, Ansible etc), server-side technologies (GoLang, Python, PHP) & client front-end languages (HTML, CSS and JavaScript). I have experience creating and hosting websites using complex math & basic logic for most common content management systems. My previous work experience includes projects with numerous digital agencies, startups and corporations.</p>
 			</td>
 		</tr>
 	</tbody>

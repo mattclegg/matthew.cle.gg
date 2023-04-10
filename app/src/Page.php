@@ -5,6 +5,7 @@ namespace {
     use SilverStripe\CMS\Model\SiteTree;
     use SilverStripe\Control\Director;
     use SilverStripe\Core\Config\Config;
+    use SilverStripe\ORM\FieldType\DBDatetime;
 
     /**
      * Class Page
@@ -13,11 +14,26 @@ namespace {
      */
     class Page extends SiteTree
     {
+        private static $db = [
+            "PositionDescriptionCount" => "Int"
+        ];
+
         private static $belongs_many_many = [
             'PositionDescription' => PositionDescription::class
         ];
 
         private static $default_sort = "\"URLSegment\"";
+
+        protected function onBeforeWrite()
+        {
+            $this->record['PositionDescriptionCount'] = $this->PositionDescription()->count();
+            parent::onBeforeWrite();
+        }
+
+        public function ExperienceYears()
+        {
+            return DBDatetime::create()->setValue("2006-4-30")->TimeDiffIn('years');
+        }
 
         /**
          * @return \SilverStripe\ORM\ManyManyList
@@ -25,9 +41,11 @@ namespace {
         public function SortedPositionDescription()
         {
             $positionTable = Config::inst()->get(Position::class, 'table_name');
-            return $this->PositionDescription()
+            return GroupedList::create(
+                $this->PositionDescription()
                 ->leftJoin($positionTable, "$positionTable.ID = PositionID")
-                ->sort("$positionTable.Date DESC");
+                    ->sort("$positionTable.Date DESC")
+            );
         }
 
         public function Tag()

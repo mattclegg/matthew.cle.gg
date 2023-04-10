@@ -1,7 +1,6 @@
 PositionDescription:
   sony_web:
     Pages:
-      - =>Page.web
       - =>Page.php
     PositionID: =>Position.sony
     Content: |

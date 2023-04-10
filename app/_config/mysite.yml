@@ -13,9 +13,12 @@ DNADesign\Populate\Populate:
     - app/fixtures/roles.yml
     - app/fixtures/jobs.yml
     - app/fixtures/job_kaplan.yml
+    - app/fixtures/job_lineten.yml
+    - app/fixtures/job_other.yml
     - app/fixtures/job_personio.yml
-    - app/fixtures/job_sony.yml
     - app/fixtures/job_sixt.yml
+    - app/fixtures/job_sony.yml
+    - app/fixtures/job_yapily.yml
 
 ---
 Name: mystaticpublishqueue

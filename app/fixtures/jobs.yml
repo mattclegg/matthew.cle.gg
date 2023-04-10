@@ -4,6 +4,16 @@ Position:
 #    Company:
 #    Location:
 #    Date:
+  yapily:
+    Title: Senior Site Reliability Engineer
+    Company: Yapily
+    Location: Old Street, London
+    Date: 2022 - present
+  lineten:
+    Title: VP Site Reliability Engineer
+    Company: LineTen
+    Location: Wood Lane, London
+    Date: 2020 - 2022
 
   sixt:
     Title: SRE / DevOps Engineer
@@ -71,10 +81,10 @@ Position:
     Date: 2009 – 2015
 
   computerguy:
-    Title: Computer Guy
+    Title: Computer Guy / Freelance web developer
     Company: Matt Clegg Systems
-    Location: Walsall, The Midlands
-    Date: 2006 – 2008
+    Location: The Midlands, UK
+    Date: 2006 – 2015
 
   logicomm:
     Title: Support Engineer
@@ -107,7 +117,6 @@ PositionDescription:
       While at Freeletics, I introduced KOPS (Kubernetes Operations) to manage Kubernetes. Previously, the cluster had been created 'by hand' to use a combination of flannel/AWS route tables to manage internal networking. I improved the cluster design by; enabling load distribution across multiple availability zones in AWS, replacing a hardcoded ingress service with a dynamic ingress controller, fixing several security issues, reducing operating costs and, most importantly, provided the ability to autoscale the number of servers required by the cluster based on the current demand. The launch script for the cluster was also documented as a repeatable script (that ran inside docker) that could create a new Kubernetes cluster by; calculating available subnet CIDRs in a VPC, generating required keys/certificates, updating DNS records, defining all required resources in terraform, setup networking using Weave and initializing a helm tiller to await for future deployments.
       I created a helm chart that described all micro-services to be done as a single deployment . This improved the workflow by ensuring that the same versions and configuration settings (routing, Memory/CPU, etc) would be deployed on all production/staging/QA environments. It also enabled the teams to use HTTPS & subsequently HTTP2 for all environments.
 
-
   foolproof_web:
     Pages:
       - =>Page.php
@@ -117,23 +126,8 @@ PositionDescription:
       Developed internal CRM(s) for various back office tasks including registration of users for conducting usability tests.
       Tasks included; application code, database design, importing from existing .xlsx solution, creating export/reporting functions, integration with Mandrill API for sending email campaigns and automating deployments to Windows host machines.
 
-  other_web:
-    Pages:
-      - =>Page.web
-      - =>Page.docker
-      - =>Page.people
-      - =>Page.php
-      - =>Page.devsecops
-      - =>Page.shell
-      - =>Page.silverstripe
-    PositionID: =>Position.other
-    Content: |
-      Involved from scope to deployment of digital projects for both Front-end / Back-end (PHP / ASP) web
-      #developments for various marketing campaign websites for mainly financial corporations. Responsible for scoping additional features, training other developers, ongoing maintenance, on-call support for infrastructure.
-
   jacobbailey_web:
     Pages:
-      - =>Page.web
       - =>Page.php
       - =>Page.devsecops
       - =>Page.shell
@@ -144,7 +138,6 @@ PositionDescription:
 
   redwood_web:
     Pages:
-      - =>Page.web
       - =>Page.people
       - =>Page.php
       - =>Page.shell
@@ -154,7 +147,6 @@ PositionDescription:
 
   bell_web:
     Pages:
-      - =>Page.web
       - =>Page.php
       - =>Page.shell
       - =>Page.silverstripe
@@ -164,7 +156,6 @@ PositionDescription:
 
   springstudios_web:
     Pages:
-      - =>Page.web
       - =>Page.php
       - =>Page.devsecops
     PositionID: =>Position.springstudios
@@ -173,7 +164,6 @@ PositionDescription:
 
   trinity_web:
     Pages:
-      - =>Page.web
       - =>Page.people
       - =>Page.php
       - =>Page.devsecops

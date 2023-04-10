@@ -11,9 +11,9 @@ PositionDescription:
 
   kaplan_aws:
     Pages:
-      - =>Page.aws
       - =>Page.python
       - =>Page.shell
+      - =>Page.aws
     PositionID: =>Position.kaplan
     Content: |
       Automation migration for several large sites from VPS cloud hosting environments, for both Linux & Windows stacks, to AWS in Europe & China regions.
@@ -31,12 +31,12 @@ PositionDescription:
       Training of Windows development team to manage releases with git.
       Training of sales & marketing team how to use CMS.
 
-  kaplan_support:
-    Pages:
-      - =>Page.support
-    PositionID: =>Position.kaplan
-    Content: |
-      Setup monitoring and alerting alert systems.
-      Debug production issues across services and levels of the stack(s).
-      Document every action for resolving produciton issues to turn into repeatable actions and then into automation.
-      Design, build and maintain core infrastructure pieces to allow autoscaling to support hundreds of thousands of concurrent users.
+#  kaplan_support:
+#    Pages:
+#      - =>Page.support
+#    PositionID: =>Position.kaplan
+#    Content: |
+#      Setup monitoring and alerting alert systems.
+#      Debug production issues across services and levels of the stack(s).
+#      Document every action for resolving produciton issues to turn into repeatable actions and then into automation.
+#      Design, build and maintain core infrastructure pieces to allow autoscaling to support hundreds of thousands of concurrent users.

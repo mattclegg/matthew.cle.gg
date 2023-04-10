@@ -18,7 +18,7 @@
 				</a>
 				<div class="box">
 					<h2>I am a $Title</h2>
-					<p>Over <strong>15</strong> years of industry experience, developing with client, server and infrastructure technologies.</p>
+					<p>Over <strong>$ExperienceYears</strong> of industry experience, developing with client, server and infrastructure technologies.</p>
 				</div>
 				<nav style="margin-bottom: 1.2em;">
 					<ul style="padding: 0;margin: 0;list-style: none;">
@@ -37,7 +37,7 @@
 		</header>
 		<main class="column app-container">
 			<article class="post">
-				<blockquote>Skilled in automation cloud orchestration tools (Kubernetes, Terraform, Ansible etc), server-side technologies (Python, PHP, Ruby) & client front-end languages (HTML, CSS and JavaScript). I have experience creating and hosting websites using complex math & basic logic for most common content management systems. My previous work experience includes projects with numerous digital agencies, startups and corporations.</blockquote>
+				<blockquote>Skilled in automation cloud orchestration tools (Kubernetes, Terraform, Ansible etc), server-side technologies (GoLang, Python, PHP) & client front-end languages (HTML, CSS and JavaScript). I have experience creating and hosting websites using complex math & basic logic for most common content management systems. My previous work experience includes projects with numerous digital agencies, startups and corporations.</blockquote>
 				<hr>
 				<div class="box">
 					<% loop $SortedPositionDescription %>
@@ -61,7 +61,7 @@
 									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tag">
 										<path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line>
 									</svg>
-									<% loop $OtherPages($Top.ID) %>
+									<% loop $OtherPagesLimited($Top.ID).Sort(MenuTitle) %>
 										<a class="tag" href="$StaticLink" title="$Title.XML">$MenuTitle</a>
 									<% end_loop %>
 								</div>

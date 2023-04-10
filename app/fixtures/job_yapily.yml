@@ -1,0 +1,29 @@
+PositionDescription:
+  yapily_web:
+    Pages:
+      - =>Page.web
+      # Cloud
+      - =>Page.gcp
+      # Buzzwords
+      - =>Page.cicd
+      - =>Page.devsecops
+      - =>Page.docker
+      - =>Page.k8s
+      # Languages
+      - =>Page.python
+      - =>Page.shell
+      - =>Page.terraform
+    PositionID: =>Position.yapily
+    Content: >-
+      Designed & built a cross-regional disaster recovery capability in GCP by: bringing all resources under Terraform management, automating/consolidating of standalone scripts, building a passive cluster in a secondary region and cleanly deploying applications to the new region.
+      Designed, developed, and implemented software integrations based on user feedback.
+      Troubleshooted production issues and coordinated with the development team to streamline code deployment.
+      Applied cloud computing skills to deploy upgrades and fixes.
+      Implemented automation tools and frameworks (CI/CD pipelines).
+      Automated re-encryption process of large amounts of sensitive data.
+      Conducted systems tests for security, performance, and availability.
+      Analysed code and communicate detailed reviews to development teams to ensure a marked improvement in applications and the timely completion of projects.
+      Optimised the company’s computing architecture.
+      Assisted in acquiring information security standards ISO27001.
+      Made Open Source Contributions to update the Terraform provider for Mozilla SOPS to write files using KMS.
+      I have provided multiple training sessions for all of engineering. One on Rebasing practices in Git and another on migration of GCP resources into Terraform.

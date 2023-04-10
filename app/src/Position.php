@@ -13,7 +13,7 @@ namespace {
             "Title" => "Text",
             "Company" => "Text",
             "Location" => "Text",
-            "Date" => "Varchar(11)"
+            "Date" => "Varchar(14)"
         ];
 
         private static $has_many = [

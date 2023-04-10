@@ -1,0 +1,20 @@
+PositionDescription:
+  other_web:
+    Pages:
+      - =>Page.docker
+      - =>Page.people
+      - =>Page.php
+      - =>Page.devsecops
+      - =>Page.shell
+      - =>Page.silverstripe
+    PositionID: =>Position.other
+    Content: |
+      Involved from scope to deployment of digital projects for both Front-end / Back-end (PHP / ASP) web developments for various marketing campaign websites for mainly financial corporations. Responsible for scoping additional features, training other developers, ongoing maintenance, on-call support for infrastructure.
+
+#  other_devsecops:
+#    Pages:
+#      - =>Page.devsecops
+#    PositionID: =>Position.other
+#    Content: |
+#      eu cookie statement (natwest)
+

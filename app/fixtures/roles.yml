@@ -4,47 +4,68 @@ Page:
     MenuTitle: web
     URLSegment: home
 
-  aws:
-    Title: AWS Developer
-    MenuTitle: AWS
-    URLSegment: aws
-  docker:
-    Title: Docker Enthusiast
-    MenuTitle: Docker
-    URLSegment: docker
-  k8s:
-    Title: Kubernetes Administrator
-    MenuTitle: K8s
-    URLSegment: k8s
-  people:
-    Title: People Person
-    MenuTitle: People
-    URLSegment: people-are-important
-  php:
-    Title: PHP Developer
-    MenuTitle: PHP
-    URLSegment: php
-  python:
-    Title: Python Developer
-    MenuTitle: Python
-    URLSegment: python
   devsecops:
     Title: Security Engineer
     MenuTitle: DevSecOps
     URLSegment: devsecops
+  k8s:
+    Title: Kubernetes Administrator
+    MenuTitle: K8s
+    URLSegment: k8s
+  terraform:
+    Title: Terraform Contributor
+    MenuTitle: Terraform
+    URLSegment: terraform
+
+  aws:
+    Title: AWS Cloud Developer
+    MenuTitle: AWS
+    URLSegment: aws
+  azure:
+    Title: Azure Cloud Developer
+    MenuTitle: Azure
+    URLSegment: azure
+  gcp:
+    Title: Google Cloud Developer
+    MenuTitle: GCP
+    URLSegment: gcp
+
+  cicd:
+    Title: CI/CD Engineer
+    MenuTitle: CI/CD
+    URLSegment: cicd
+  docker:
+    Title: Docker Enthusiast
+    MenuTitle: Docker
+    URLSegment: docker
+
+  go:
+    Title: Golang Developer
+    MenuTitle: GO
+    URLSegment: go-lang
+  python:
+    Title: Python Developer
+    MenuTitle: Python
+    URLSegment: python
   shell:
     Title: Linux Administrator
     MenuTitle: shell
     URLSegment: shell
+  php:
+    Title: PHP Developer
+    MenuTitle: PHP
+    URLSegment: php
+
   silverstripe:
     Title: SilverStripe Developer
     MenuTitle: SilverStripe
     URLSegment: silverstripe
+
   support:
     Title: Support Engineer
     MenuTitle: Support
     URLSegment: support
-  terraform:
-    Title: Terraform Developer
-    MenuTitle: Terraform
-    URLSegment: terraform
+  people:
+    Title: People Person
+    MenuTitle: People
+    URLSegment: people-are-important
