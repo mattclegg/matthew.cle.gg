@@ -13,15 +13,15 @@ PositionDescription:
       - =>Page.terraform
     PositionID: =>Position.personio
     Content: >-
-      Responsible for building and maintaining cloud based infrastructure for SAAS platform used by SME customers.
-      Responsible for automating everything from A to Z using Terraform, Ansible, AWS lambda functions, etc.
-      I was responsible for supporting a team of SREs in monitoring the platform using logs, metrics, tracing, amongst other observability stacks such as ELK and NewRelic.
+      Responsible for building and maintaining cloud-based infrastructure for SAAS platform used by SME customers.
+      Responsible for automating everything from A to Z using Terraform, Ansible, AWS Lambda functions, etc.
+      I was responsible for supporting a team of SREs in monitoring the platform using logs, metrics, tracing, and other observability stacks such as ELK and NewRelic.
       I advised product teams on topics such as automation and architecture.
-      I aimed to enhance teams in regards to communication, collaboration and integration between software developers and infrastructure stakeholders in the software delivery lifecycle.
-      While at Personio I migrated their web services into Kubernetes in AWS using GitLab.
+      I aimed to enhance teams concerning communication, collaboration and integration between software developers and infrastructure stakeholders in the software delivery lifecycle.
+      While at Personio, I migrated their web services into Kubernetes on AWS using GitLab.
       I created and managed a GitLab service in an automated fashion.
       I used a GitLab instance to provision Kubernetes environments in AWS.
-      I migrated all microservices to Kubernetes services in AWS environment using direct connect.
+      I migrated all microservices to Kubernetes services in an AWS environment using Direct Connect.
       I aimed to improve their existing platform concerning scalability, deployments and reliability so they require less maintenance in the future.
       I supported the internal team on operations topics regarding deployment & automation.
       I provided training sessions for keen developers to attend regarding Docker & Kubernetes.
@@ -33,8 +33,8 @@ PositionDescription:
     Content: |
       One of the main implementations that I made early in the AWS migration project was related to the delivery pipeline.
       I implemented a procedure for the application to be deployed automatically to AWS for any changes made to the application.
-      I was then able to use this as a platform for training developers from my experience about docker & delivery pipelines.
-      This early training opportunity allowed me to build a report with developers whom I would later be working with to gather technical requirements from them.
+      I was then able to use this as a platform for training developers from my experience with Docker & delivery pipelines.
+      This early training opportunity allowed me to build a rapport with developers whom I would later be working with to gather technical requirements from them.
 
 #  personio_devsecops:
 #    Pages:
@@ -44,5 +44,5 @@ PositionDescription:
 #      GDPR
 #
 #      While at Personio, I documented & scoped for an IPS but didn't start implementation (due to budget).
-#      I was responsible for implementing ACLs for both IAM & K8s.
+#      I was responsible for implementing ACLs for both IAM & Kubernetes.
 #      I also maintained various IDS components.

@@ -115,7 +115,7 @@ PositionDescription:
     Content: >
       During my time at Freeletics I was responsible for running their heavily used platform to sustain the api/web services 24x7x365. I completed this by monitoring the platform to know of issues before users and proactively responding to maintain the system.
       While at Freeletics, I introduced KOPS (Kubernetes Operations) to manage Kubernetes. Previously, the cluster had been created 'by hand' to use a combination of flannel/AWS route tables to manage internal networking. I improved the cluster design by; enabling load distribution across multiple availability zones in AWS, replacing a hardcoded ingress service with a dynamic ingress controller, fixing several security issues, reducing operating costs and, most importantly, provided the ability to autoscale the number of servers required by the cluster based on the current demand. The launch script for the cluster was also documented as a repeatable script (that ran inside docker) that could create a new Kubernetes cluster by; calculating available subnet CIDRs in a VPC, generating required keys/certificates, updating DNS records, defining all required resources in terraform, setup networking using Weave and initializing a helm tiller to await for future deployments.
-      I created a helm chart that described all micro-services to be done as a single deployment . This improved the workflow by ensuring that the same versions and configuration settings (routing, Memory/CPU, etc) would be deployed on all production/staging/QA environments. It also enabled the teams to use HTTPS & subsequently HTTP2 for all environments.
+      I created a Helm chart that described all microservices to be done as a single deployment. This improved the workflow by ensuring that the same versions and configuration settings (routing, Memory/CPU, etc) would be deployed on all production/staging/QA environments. It also enabled the teams to use HTTPS & subsequently HTTP2 for all environments.
 
   foolproof_web:
     Pages:
@@ -123,8 +123,8 @@ PositionDescription:
       - =>Page.silverstripe
     PositionID: =>Position.foolproof
     Content: |
-      Developed internal CRM(s) for various back office tasks including registration of users for conducting usability tests.
-      Tasks included; application code, database design, importing from existing .xlsx solution, creating export/reporting functions, integration with Mandrill API for sending email campaigns and automating deployments to Windows host machines.
+      Developed internal CRM(s) for various back office tasks, including registration of users for conducting usability tests.
+      Tasks included: application code, database design, importing from existing .xlsx solution, creating export/reporting functions, integration with Mandrill API for sending email campaigns and automating deployments to Windows host machines.
 
   jacobbailey_web:
     Pages:
@@ -134,7 +134,7 @@ PositionDescription:
       - =>Page.silverstripe
     PositionID: =>Position.jacobbailey
     Content: |
-      Various high performance and large content websites mainly for Suffolk County Council. Ongoing maintenance / improvements on a high security website that provides support and funding for children with disabilities, Suffolk Council Informational services website, and Suffolk County Music Service Educational website.
+      Various high-performance and large content websites (mainly for the Suffolk County Council). Ongoing maintenance / improvements on a high security website that provides support and funding for children with disabilities, Suffolk Council Informational services website, and Suffolk County Music Service Educational website.
 
   redwood_web:
     Pages:
@@ -143,7 +143,7 @@ PositionDescription:
       - =>Page.shell
     PositionID: =>Position.redwood
     Content: |
-      Weekly published online TV guide for Virgin Media. General site maintenance / optimisation and created a plugin for maintaining nodes via Rackspace API. Patched PHP SDK for OpenCloud to provide usable responses from OpenStack API.
+      Weekly published online TV guide for Virgin Media. General site maintenance/optimisation and created a plugin for maintaining nodes via Rackspace API. Patched PHP SDK for OpenCloud to provide usable responses from OpenStack API.
 
   bell_web:
     Pages:
@@ -152,7 +152,7 @@ PositionDescription:
       - =>Page.silverstripe
     PositionID: =>Position.bell
     Content: |
-      Various marketing campaign websites for mainly property corporations. General CMS maintenance / development of existing projects and scoping technical details for future projects.
+      Various marketing campaign websites for mainly property corporations. General CMS maintenance/development of existing projects and scoping technical details for future projects.
 
   springstudios_web:
     Pages:
@@ -160,7 +160,7 @@ PositionDescription:
       - =>Page.devsecops
     PositionID: =>Position.springstudios
     Content: |
-      Magento website for department store Fenwick. Checkout integration, server configuration, general front end optimisation, and 1 on 1 Magento training with the companies senior PM.
+      Magento website for department store Fenwick. Checkout integration, server configuration, general front-end optimisation, and 1-on-1 Magento training with the company's senior PM.
 
   trinity_web:
     Pages:
@@ -171,7 +171,7 @@ PositionDescription:
       - =>Page.silverstripe
     PositionID: =>Position.trinity
     Content: |
-      Marketing for small local businesses in the Midlands. Created over 150 unique websites with only 1 other (front end) developer during 18 month period including a business `social network` resource for Solihull council.
+      Marketing for small local businesses in the Midlands. Created over 150 unique websites with only 1 other (front-end) developer during 18 month period, including a business `social network` resource for Solihull council.
 
   computerguy_web:
     Pages:
@@ -182,5 +182,5 @@ PositionDescription:
       - =>Page.shell
     PositionID: =>Position.computerguy
     Content: |
-      I created (or amended) custom open source web scripts in PHP, and developed JavaScript’s for web applications. I also designed & developed Windows based software to work with a cost effective (Linux) database servers, for managing stock/sales etc.
-      I created servers that I configured to run; databases for CRM and product management, IMAP/SMTP mail services, squid proxy hosts, file sharing (SMB) and domain controller services. I also offered remote support & hardware maintenance of all combinations of Apple/Linux/Windows desktop/laptop/servers. Where possible I helped people with advice to customers/suppliers regarding technical/sales issues, gave advice on products, and helped problem solved any other IT related issues.
+      I created (or amended) custom open source web scripts in PHP, and developed JavaScript for web applications. I also designed & developed Windows-based software to work with a cost-effective (Linux) database server, for managing stock/sales, etc.
+      I created servers that I configured to run; databases for CRM and product management, IMAP/SMTP mail services, squid proxy hosts, file sharing (SMB) and domain controller services. I also offered remote support & hardware maintenance of all combinations of Apple/Linux/Windows desktop/laptop/servers. Where possible, I helped people with advice to customers/suppliers regarding technical/sales issues, gave advice on products, and helped to solve any other IT-related issues.
