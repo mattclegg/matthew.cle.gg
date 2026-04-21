@@ -2,10 +2,13 @@
 
 namespace {
 
+    use SilverStripe\CMS\Controllers\RootURLController;
     use SilverStripe\CMS\Model\SiteTree;
     use SilverStripe\Control\Director;
     use SilverStripe\Core\Config\Config;
     use SilverStripe\ORM\FieldType\DBDatetime;
+    use SilverStripe\ORM\FieldType\DBHTMLText;
+    use SilverStripe\ORM\GroupedList;
 
     /**
      * Class Page
@@ -24,15 +27,26 @@ namespace {
 
         private static $default_sort = "\"URLSegment\"";
 
+        public function requireDefaultRecords()
+        {
+            parent::requireDefaultRecords();
+            Populate::requireRecords();
+        }
+
         protected function onBeforeWrite()
         {
             $this->record['PositionDescriptionCount'] = $this->PositionDescription()->count();
             parent::onBeforeWrite();
         }
 
+        public static function get_homepage() {
+            return SiteTree::get_by_link(RootURLController::config()->get('default_homepage_link'));
+        }
+
         public function ExperienceYears()
         {
             return DBDatetime::create()->setValue("2006-4-30")->TimeDiffIn('years');
+            //return DBHTMLText::create()->setValue("<strong>" . DBDatetime::create()->setValue("2006-4-30")->TimeDiffIn('years') . "</strong>");
         }
 
         /**
@@ -44,13 +58,13 @@ namespace {
             return GroupedList::create(
                 $this->PositionDescription()
                 ->leftJoin($positionTable, "$positionTable.ID = PositionID")
-                    ->sort("$positionTable.Date DESC")
+                ->sort("$positionTable.Date DESC")
             );
         }
 
         public function Tag()
         {
-            if ($this->URLSegment == 'home') {
+            if ($this->isHomePage()) {
                 return 'web';
             } else {
                 return $this->URLSegment;
@@ -78,7 +92,7 @@ namespace {
                 Director::absoluteURL($this->Link('pdf')) => 1
             ];
 
-            if ($this->URLSegment == 'home') {
+            if ($this->isHomePage()) {
                 $links = array_merge($links, [
                     Director::absoluteURL($this->Link()) => 0
                 ]);

@@ -6,10 +6,10 @@ PositionDescription:
       - =>Page.docker
     PositionID: =>Position.sixt
     Content: >-
-      Initially configured EKS Clusters via TerraForm to be provisioned from GitlabCI pipeline.
+      Initially configured EKS Clusters via Terraform to be provisioned from GitlabCI pipeline.
       I created a Jenkins pipeline framework using Groovy scripts for dockerizing Spring Boot application microservices.
       I created a framework for deploying a Kafka proxy/zookeeper for creating ephemeral microservice preview environments.
-      I configured API Gateway with TerraForm to run a lambda for deploying generated microservice Kubernetes manifests.
+      I configured API Gateway with Terraform to run a lambda for deploying generated microservice Kubernetes manifests.
       I implemented a Prometheus based monitoring solution and synced observability requirements of the Orange Platform.
 
 
@@ -19,11 +19,11 @@ PositionDescription:
       - =>Page.devsecops
     PositionID: =>Position.sixt
     Content: >-
-      Initially configure EKS Clusters via TerraForm manifest to be provisioned from GitlabCI pipeline.
+      Initially configure EKS Clusters via Terraform manifest to be provisioned from GitlabCI pipeline.
       I configured GitCrypt to ensure sensitive information was encrypted when committed to the repository.
       I created a Jenkins pipeline framework using Groovy scripts for dockerizing Spring Boot application microservices.
       I created a framework for deploying a Kafka proxy/zookeeper for creating ephemeral microservice preview environments.
-      I configured API Gateway with TerraForm to run a lambda for deploying generated microservice Kubernetes manifests.
+      I configured API Gateway with Terraform to run a lambda for deploying generated microservice Kubernetes manifests.
       I implemented a Prometheus based monitoring solution and synced observability requirements of the Orange Platform.
 #
 #      lambda security hole

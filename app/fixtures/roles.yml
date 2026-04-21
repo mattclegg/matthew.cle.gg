@@ -3,15 +3,19 @@ Page:
     Title: Web Technologist
     MenuTitle: web
     URLSegment: home
+    MetaDescription: |
+      Over $ExperienceYears of industry experience, developing with client, server and infrastructure technologies. Skilled in automation cloud orchestration tools (Kubernetes, Terraform, Helm, Ansible etc), server-side technologies (GoLang, Python, etc) & client front-end languages (HTML, CSS and JavaScript). I have experience creating and hosting websites using complex math & basic logic for most common content management systems. My previous work experience includes projects with numerous digital agencies, startups and corporations.
 
   devsecops:
     Title: Security Engineer
     MenuTitle: DevSecOps
     URLSegment: devsecops
   k8s:
-    Title: Kubernetes Administrator
+    Title: Kubernetes Architect
     MenuTitle: K8s
     URLSegment: k8s
+    MetaDescription: |
+      Over $ExperienceYears of experience in systems design and cloud-native architecture. Proven track record of leading organizational transformation from on-premise legacy systems to multi-cluster Kubernetes ecosystems in multiple cloud providers. Deep expertise in building platform guardrails that balance developer velocity with operational stability. A "Player-Coach" who combines strong architectural convictions with the empathy required to coach teams through cloud adoption and merge conflicting SRE/DevOps cultures.
   terraform:
     Title: Terraform Contributor
     MenuTitle: Terraform
@@ -66,6 +70,6 @@ Page:
     MenuTitle: Support
     URLSegment: support
   people:
-    Title: People Person
+    Title: SRE coach
     MenuTitle: People
     URLSegment: people-are-important

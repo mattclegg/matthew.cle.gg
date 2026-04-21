@@ -1,4 +1,12 @@
 PositionDescription:
+  personio_k8s:
+    Pages:
+    - =>Page.k8s
+    PositionID: =>Position.personio
+    Content: >-
+      Built production-grade Kubernetes clusters from scratch (KOPS) before the era of managed services, developing a deep understanding of etcd, control plane components, and networking (CNI) troubleshooting. This foundation enabled me to later lead major migrations, including moving a SAAS platform's entire microservices architecture into AWS EKS using GitLab and Direct Connect, significantly improving scalability, deployment reliability, and reducing long-term maintenance overhead. To achieve this, I championed a philosophy of "automating everything from A to Z," managing cloud infrastructure as code with Terraform and Ansible, and leveraging AWS Lambda for event-driven automation.
+      Redesigned the application’s state management to be cloud-native, implementing horizontal pod autoscaling (HPA), reducing cloud costs during low-traffic periods. To ensure the platform's health, I supported a team of SREs by implementing comprehensive observability stacks, including ELK for logs and NewRelic for metrics and tracing. Furthermore, I advised product teams on automation and architecture, and acted as the technical liaison between development and infrastructure. This involved not only ensuring applications were designed to be "cloud-ready" but also providing training sessions for developers on Docker and Kubernetes, and supporting internal teams on operational topics to enhance communication, collaboration, and integration across the entire software delivery lifecycle.
+
   personio_web:
     Pages:
       - =>Page.web
@@ -6,7 +14,7 @@ PositionDescription:
       - =>Page.cicd
       - =>Page.devsecops
       - =>Page.docker
-      - =>Page.k8s
+      - =>Page.people
       - =>Page.php
       - =>Page.python
       - =>Page.shell
@@ -17,11 +25,10 @@ PositionDescription:
       Responsible for automating everything from A to Z using Terraform, Ansible, AWS Lambda functions, etc.
       I was responsible for supporting a team of SREs in monitoring the platform using logs, metrics, tracing, and other observability stacks such as ELK and NewRelic.
       I advised product teams on topics such as automation and architecture.
-      I aimed to enhance teams concerning communication, collaboration and integration between software developers and infrastructure stakeholders in the software delivery lifecycle.
-      While at Personio, I migrated their web services into Kubernetes on AWS using GitLab.
-      I created and managed a GitLab service in an automated fashion.
-      I used a GitLab instance to provision Kubernetes environments in AWS.
-      I migrated all microservices to Kubernetes services in an AWS environment using Direct Connect.
+      I aimed to enhance teams in regard to communication, collaboration and integration between software developers and infrastructure stakeholders in the software delivery lifecycle.
+      While at Personio, I migrated their web services into Kubernetes in AWS using GitLab.
+      I created and managed a GitLab service automatically. I used a GitLab instance to provision Kubernetes environments in AWS.
+      I migrated all microservices to Kubernetes services in AWS environment using Direct Connect.
       I aimed to improve their existing platform concerning scalability, deployments and reliability so they require less maintenance in the future.
       I supported the internal team on operations topics regarding deployment & automation.
       I provided training sessions for keen developers to attend regarding Docker & Kubernetes.
@@ -31,10 +38,17 @@ PositionDescription:
       - =>Page.people
     PositionID: =>Position.personio
     Content: |
-      One of the main implementations that I made early in the AWS migration project was related to the delivery pipeline.
-      I implemented a procedure for the application to be deployed automatically to AWS for any changes made to the application.
-      I was then able to use this as a platform for training developers from my experience with Docker & delivery pipelines.
-      This early training opportunity allowed me to build a rapport with developers whom I would later be working with to gather technical requirements from them.
+      I was responsible for building and maintaining cloud-based infrastructure for a SaaS platform serving SME customers. I drove end-to-end automation using tools like Terraform, Ansible, and AWS Lambda. I supported a team of SREs in monitoring the platform through logs, metrics, tracing, and observability stacks such as ELK and New Relic.
+      A key part of my role was advising product teams on automation and architecture, while actively fostering better communication, collaboration, and integration between software developers and infrastructure stakeholders throughout the software delivery lifecycle.
+      At Personio, I led the migration of web services into Kubernetes on AWS using GitLab, where I also created and managed an automated GitLab service. Using this GitLab instance, I provisioned Kubernetes environments in AWS and migrated all microservices to Kubernetes services within an AWS environment via Direct Connect. My goal was to enhance the existing platform’s scalability, deployment processes, and reliability—significantly reducing future maintenance overhead.
+      I supported the internal team on operational topics related to deployment and automation, but my primary focus was coaching developers transitioning into SRE roles. To that end, I provided hands-on training sessions for motivated developers on Docker and Kubernetes, helping them build the skills needed to thrive in SRE.
+#
+#
+#
+#      One of the main implementations that I made early in the AWS migration project was related to the delivery pipeline.
+#      I implemented a procedure for the application to be deployed automatically to AWS for any changes made to the application.
+#      I was then able to use this as a platform for training developers from my experience with Docker & delivery pipelines.
+#      This early training opportunity allowed me to build a rapport with developers whom I would later be working with to gather technical requirements from them.
 
 #  personio_devsecops:
 #    Pages:

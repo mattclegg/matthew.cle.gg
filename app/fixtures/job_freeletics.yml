@@ -1,0 +1,27 @@
+PositionDescription:
+  freeletics_k8s:
+    Pages:
+    - =>Page.k8s
+    PositionID: =>Position.freeletics
+    Content: >
+      During my time at Freeletics I was responsible for running their heavily used platform to sustain the api/web services 24x7x365. I completed this by monitoring the platform to know of issues before users and proactively responding to maintain the system.
+      I built production clusters the hard way—manually configuring etcd, API servers, and controllers before tools like KOPS simplified it. This gave me deep, practical experience troubleshooting control plane instability and CNI misconfigurations at the OS level (e.g., digging into iptables and network namespaces).
+      While at Freeletics, I introduced KOPS (Kubernetes Operations) to manage Kubernetes. I improved the cluster design by; enabling load distribution across multiple availability zones in AWS, replacing a hardcoded ingress service with a dynamic ingress controller, fixing several security issues, reducing operating costs and, most importantly, provided the ability to autoscale the number of servers required by the cluster based on the current demand. The launch script for the cluster was also documented as a repeatable script (that ran inside docker) that could create a new Kubernetes cluster by; calculating available subnet CIDRs in a VPC, generating required keys/certificates, updating DNS records, defining all required resources in terraform, setup networking using Weave and initializing a helm tiller to await for future deployments.
+      I created a Helm chart that described all microservices to be done as a single deployment. This improved the workflow by ensuring that the same versions and configuration settings (routing, Memory/CPU, etc) would be deployed on all production/staging/QA environments. It also enabled the teams to use HTTPS & subsequently HTTP2 for all environments.
+
+  freeletics_web:
+    Pages:
+    - =>Page.web
+    - =>Page.aws
+    - =>Page.docker
+    - =>Page.people
+    - =>Page.python
+    - =>Page.devsecops
+    - =>Page.shell
+    PositionID: =>Position.freeletics
+    Content: >
+      During my time at Freeletics I was responsible for running their heavily used platform to sustain the api/web services 24x7x365. I completed this by monitoring the platform to know of issues before users and proactively responding to maintain the system.
+      While at Freeletics, I introduced KOPS (Kubernetes Operations) to manage Kubernetes. Previously, the cluster had been created 'by hand' to use a combination of flannel/AWS route tables to manage internal networking. I improved the cluster design by; enabling load distribution across multiple availability zones in AWS, replacing a hardcoded ingress service with a dynamic ingress controller, fixing several security issues, reducing operating costs and, most importantly, provided the ability to autoscale the number of servers required by the cluster based on the current demand. The launch script for the cluster was also documented as a repeatable script (that ran inside docker) that could create a new Kubernetes cluster by; calculating available subnet CIDRs in a VPC, generating required keys/certificates, updating DNS records, defining all required resources in terraform, setup networking using Weave and initializing a helm tiller to await for future deployments.
+      I created a Helm chart that described all microservices to be done as a single deployment. This improved the workflow by ensuring that the same versions and configuration settings (routing, Memory/CPU, etc) would be deployed on all production/staging/QA environments. It also enabled the teams to use HTTPS & subsequently HTTP2 for all environments.
+  
+  

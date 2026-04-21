@@ -9,16 +9,23 @@ DNADesign\Populate\Populate:
     - Page
     - Position
     - PositionDescription
+  truncate_tables:
+    - PositionDescription_Pages
   include_yaml_fixtures:
     - app/fixtures/roles.yml
     - app/fixtures/jobs.yml
-    - app/fixtures/job_kaplan.yml
+    - app/fixtures/job_default.yml
+    - app/fixtures/job_freeletics.yml
+#    - app/fixtures/job_kaplan.yml
     - app/fixtures/job_lineten.yml
-    - app/fixtures/job_other.yml
+#    - app/fixtures/job_other.yml
     - app/fixtures/job_personio.yml
-    - app/fixtures/job_sixt.yml
-    - app/fixtures/job_sony.yml
+#    - app/fixtures/job_sixt.yml
+#    - app/fixtures/job_sony.yml
     - app/fixtures/job_yapily.yml
+
+Symbiote\QueuedJobs\Services\QueuedJobService:
+  memory_limit: -1
 
 ---
 Name: mystaticpublishqueue

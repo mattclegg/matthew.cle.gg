@@ -1,0 +1,13 @@
+PositionDescription:
+  computerguy_web:
+    Pages:
+    - =>Page.k8s
+    - =>Page.web
+    - =>Page.people
+    - =>Page.php
+    - =>Page.devsecops
+    - =>Page.shell
+    PositionID: =>Position.computerguy
+    Content: |
+      I created (or amended) custom open source web scripts in PHP, and developed JavaScript for web applications. I also designed & developed Windows-based software to work with a cost-effective (Linux) database server, for managing stock/sales, etc.
+      I created servers that I configured to run; databases for CRM and product management, IMAP/SMTP mail services, squid proxy hosts, file sharing (SMB) and domain controller services. I also offered remote support & hardware maintenance of all combinations of Apple/Linux/Windows desktop/laptop/servers. Where possible, I helped people with advice to customers/suppliers regarding technical/sales issues, gave advice on products, and helped to solve any other IT-related issues.

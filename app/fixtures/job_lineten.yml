@@ -8,7 +8,6 @@ PositionDescription:
       # Buzzwords
       - =>Page.devsecops
       - =>Page.docker
-      - =>Page.k8s
       # Languages
 #      - =>Page.ASP.NETCore
 #      - =>Page.ballerina
@@ -17,15 +16,13 @@ PositionDescription:
       - =>Page.python
       - =>Page.shell
       - =>Page.terraform
-      # Soft skills
-      - =>Page.people
     PositionID: =>Position.lineten
     Content: >-
       Responsible for automating everything from A to Z using Terraform, AWS, Azure, etc.
-      Ensuring ‘the lights stay on’ to deliver the best possible experience to customers.
+      Ensuring ‘the lights stay on’, to deliver the best possible experience to customers.
       Migrated web services into Docker/Kubernetes from ElasticBeanstalk & migrated from BitBucket to GitLab.
       Proactively monitored the health of the platform to detect and resolve threats, defects and outages before they had any meaningful impact on users.
-      Enhanced teams concerning communication, collaboration and integration between software developers and infrastructure stakeholders in the software delivery lifecycle.
+      Enhanced teams regarding communication, collaboration and integration between software developers and infrastructure stakeholders in the software delivery lifecycle.
       Worked closely with product stakeholders, such as designers and product managers, to gather requirements and refine problems into focused deliverables.
       Advised with a pragmatic approach to operation/product teams on topics such as automation, deployments and architecture.
       Provided training sessions for keen developers to attend regarding Docker & Kubernetes.
@@ -33,3 +30,25 @@ PositionDescription:
       I aimed to improve their existing platform concerning scalability, deployments and reliability so they require less maintenance in the future.
       I used my start-up mentality to be responsible, energetic, ambitious, adaptable and willing to jump in wherever might be needed.
 
+  lineten_k8s:
+    Pages:
+    - =>Page.k8s
+    PositionID: =>Position.lineten
+    Content: >-
+      Led the architecture and end-to-end execution of the company’s strategic migration from Elastic Beanstalk to a cloud-native platform on AWS (EKS). Championed a philosophy of automating "everything from A to Z," leveraging Terraform and GitLab CI to treat infrastructure as code and eliminate manual processes.
+      Designed and deployed a hybrid multi-cluster EKS strategy spanning four AWS regions, utilizing a management cluster for workload distribution. Architected a self-service Internal Developer Platform (IDP) using Terraform and GitLab CI, empowering product teams with on-demand, standardized infrastructure.
+      Implemented OPA/Gatekeeper policies to enforce security and compliance guardrails, dramatically reducing misconfiguration incidents while preserving developer autonomy. Proactively monitored the health of the platform using logs, metrics, and tracing, enabling the team to detect and resolve threats and outages before they impacted users.
+      Managed and mentored a team of 5+ Platform/SRE engineers, fostering a culture of collaboration between developers and infrastructure stakeholders. Enhanced team capabilities through regular pair-programming sessions on Kubernetes internals and systems design, and provided company-wide training sessions to educate keen developers on Docker and Kubernetes best practices.
+      Partnered closely with product stakeholders, including designers and product managers, to refine requirements and translate business needs into focused, scalable deliverables. Applied a pragmatic, startup-mentality approach to advise product teams on architecture, deployments, and automation, ensuring the platform required less maintenance while delivering the best possible customer experience.
+
+  lineten_people:
+    Pages:
+    # Soft skills
+    - =>Page.people
+    PositionID: =>Position.lineten
+    Content: >-
+      As VP of SRE, I was responsible for end-to-end automation using Terraform across AWS, Azure, and other cloud platforms, while ensuring system reliability and a seamless customer experience (“keeping the lights on”).
+      I led the migration of web services from ElasticBeanstalk to Docker/Kubernetes and transitioned version control from BitBucket to GitLab. Proactively monitoring platform health, I detected and resolved threats, defects, and outages before they could impact users.
+      A key focus of my role was developing junior SREs—I supported a team of SREs in leveraging logs, metrics, tracing, and observability tools to monitor the platform effectively. I also provided hands-on training sessions for aspiring developers and junior engineers on Docker and Kubernetes.
+      Beyond coaching, I enhanced collaboration between software developers and infrastructure stakeholders across the software delivery lifecycle. I worked closely with product managers and designers to refine requirements into focused deliverables, and advised operations and product teams pragmatically on automation, deployments, and architecture.
+      With a startup mindset—energetic, adaptable, and willing to jump in wherever needed—I focused on improving the existing platform’s scalability, deployment processes, and reliability to reduce future maintenance overhead.

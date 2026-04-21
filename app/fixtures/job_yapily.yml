@@ -1,4 +1,47 @@
 PositionDescription:
+  yapily_k8s:
+    Pages:
+    - =>Page.k8s
+    PositionID: =>Position.yapily
+    Content: >-
+      <h4>Platform Engineering & Architecture</h4>
+      Architected and deployed a hybrid multi-cluster GKE strategy spanning 2 GCP regions for disaster recovery, establishing cross-regional failover capabilities by: bringing all resources under Terraform management, consolidating standalone scripts, building a passive secondary cluster, and orchestrating clean application deployment to the new region.
+      Designed a self-service Internal Developer Platform (IDP) using Terraform and ArgoCD, enabling developer autonomy while implementing policies that enforce security and compliance standards — reducing misconfiguration incidents.
+      Led the architecture review board for cloud-native designs and was instrumental in merging separate SRE and DevOps functions into a unified Platform Engineering division.
+      <br/><br/><h4>Infrastructure as Code & Automation</h4>
+      Replaced manual click-ops with Terraform configurations, introducing peer review processes for infrastructure changes to improve stability and knowledge sharing.
+      Automated re-encryption processes for large volumes of sensitive data and implemented CI/CD automation tools and frameworks using JAVA/GoLang/Python.
+      Conducted comprehensive systems tests for security, performance, and availability; analyzed code and delivered detailed reviews to development teams, ensuring marked application improvements and timely project completion.
+      <br/><br/><h4>Open Source & Technical Contributions</h4>
+      Contributed open source GoLang enhancements to Helm, enabling support for charts from private GitHub repositories, and developed a custom Terraform provider for Mozilla SOPS to write files using KMS.
+      <br/><br/><h4>Observability & Operations</h4>
+      Migrated to a dedicated in-cluster observability stack based on Prometheus/LGTM; troubleshoot and coordinate with development teams on CI/CD and observability issues.
+      Optimized the company's computing architecture and applied cloud computing expertise to deploy upgrades and fixes.
+      <br/><br/><h4>Compliance & Knowledge Sharing</h4>
+      Assisted in achieving ISO27001 information security certification.
+      Facilitated workshops between legacy operations and modern development teams, focusing on shared goals and incident retrospection.
+      Delivered multiple engineering-wide training sessions on: Git rebasing best practices, migrating GCP resources to Terraform, IAM policy management in GCP, Docker build processes in BitBucket CI, and deployment release processes in ArgoCD.
+      Modernized infrastructure documentation using AI-assisted tooling.
+
+  yapily_go:
+    Pages:
+    - =>Page.go
+    PositionID: =>Position.yapily
+    Content: >-
+      Designed & built a cross-regional disaster recovery capability in GCP by: bringing all resources under Terraform management, automating/consolidating of standalone scripts, building a passive cluster in a secondary region and cleanly deploying applications to the new region.
+      Open Source Contributions in GoLang for; Helm to allow support for using charts from private GitHub repositories & custom Terraform provider for Mozilla SOPS to write files using KMS.
+      Migrated to dedicated (in-cluster) observability stack based on Prometheus/LGTM.
+      Troubleshooting and coordinated issues with the development team related to CI/CD & o11y.
+      Applied cloud computing skills to deploy upgrades and fixes.
+      Implemented automation tools and frameworks (CI/CD pipelines) using GoLang.
+      Automated re-encryption process of large amounts of sensitive data.
+      Conducted systems tests for security, performance, and availability.
+      Analysed code and communicate detailed reviews to development teams to ensure a marked improvement in applications and the timely completion of projects.
+      Optimised the company’s computing architecture.
+      Assisted in acquiring information security standards ISO27001.
+      Provided multiple training sessions for all of engineering; Git rebasing best practices, migration of GCP resources into Terraform, IAM policy management in GCP, docker build process in BitBucket CI, deployment release process in ArgoCD.
+      Updated documentation of IaC using AI.
+
   yapily_web:
     Pages:
       - =>Page.web
@@ -8,7 +51,6 @@ PositionDescription:
       - =>Page.cicd
       - =>Page.devsecops
       - =>Page.docker
-      - =>Page.k8s
       # Languages
       - =>Page.python
       - =>Page.shell
@@ -27,3 +69,15 @@ PositionDescription:
       Assisted in acquiring information security standards ISO27001.
       Made Open Source Contributions to update the Terraform provider for Mozilla SOPS to write files using KMS.
       I have provided multiple training sessions for all of engineering. One on Rebasing practices in Git and another on migration of GCP resources into Terraform.
+
+  yapily_people:
+    Pages:
+    - =>Page.people
+    PositionID: =>Position.yapily
+    Content: >-
+      As an SRE a key focus of my role was coaching and training.
+      I led the design and implementation of a cross-regional disaster recovery solution on GCP, which included managing all resources via Terraform, consolidating standalone scripts into automated processes, establishing a passive cluster in a secondary region, and deploying applications cleanly across regions.
+      I actively gathered user feedback to design, develop, and deploy software integrations. I troubleshot production issues and collaborated closely with development teams to streamline code deployments, applying cloud computing expertise to roll out upgrades and fixes.
+      To advance reliability and security, I implemented CI/CD pipelines, automated the re-encryption of large volumes of sensitive data, and conducted systems tests for security, performance, and availability. I also analyzed code, delivered detailed reviews to development teams, and drove measurable improvements in application quality and project timelines.
+      I optimized the company’s cloud computing architecture and supported the acquisition of ISO27001 information security standards. As part of my commitment to open source, I contributed to the Terraform provider for Mozilla SOPS, enabling KMS-based file writing.
+      I delivered multiple engineering-wide sessions—including Git rebasing practices and migrating GCP resources into Terraform—to upskill teams and embed SRE principles across the organization.

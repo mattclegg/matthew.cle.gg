@@ -73,7 +73,7 @@
 			</article>
 			<footer>
 				<h6>Hobbies &amp; interests</h6>
-				<p>My favourite hobbies include long distance cycling, short distance running and hiking.</p>
+				<p>My favourite hobbies include open water swimming, long distance cycling, and shorter distance running.</p>
 				<p>I am also interested in cooking and photography.</p>
 			</footer>
 		</main>

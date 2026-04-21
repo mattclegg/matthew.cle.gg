@@ -101,22 +101,6 @@ Position:
 
 
 PositionDescription:
-  freeletics_web:
-    Pages:
-      - =>Page.web
-      - =>Page.aws
-      - =>Page.docker
-      - =>Page.k8s
-      - =>Page.people
-      - =>Page.python
-      - =>Page.devsecops
-      - =>Page.shell
-    PositionID: =>Position.freeletics
-    Content: >
-      During my time at Freeletics I was responsible for running their heavily used platform to sustain the api/web services 24x7x365. I completed this by monitoring the platform to know of issues before users and proactively responding to maintain the system.
-      While at Freeletics, I introduced KOPS (Kubernetes Operations) to manage Kubernetes. Previously, the cluster had been created 'by hand' to use a combination of flannel/AWS route tables to manage internal networking. I improved the cluster design by; enabling load distribution across multiple availability zones in AWS, replacing a hardcoded ingress service with a dynamic ingress controller, fixing several security issues, reducing operating costs and, most importantly, provided the ability to autoscale the number of servers required by the cluster based on the current demand. The launch script for the cluster was also documented as a repeatable script (that ran inside docker) that could create a new Kubernetes cluster by; calculating available subnet CIDRs in a VPC, generating required keys/certificates, updating DNS records, defining all required resources in terraform, setup networking using Weave and initializing a helm tiller to await for future deployments.
-      I created a Helm chart that described all microservices to be done as a single deployment. This improved the workflow by ensuring that the same versions and configuration settings (routing, Memory/CPU, etc) would be deployed on all production/staging/QA environments. It also enabled the teams to use HTTPS & subsequently HTTP2 for all environments.
-
   foolproof_web:
     Pages:
       - =>Page.php
@@ -138,7 +122,6 @@ PositionDescription:
 
   redwood_web:
     Pages:
-      - =>Page.people
       - =>Page.php
       - =>Page.shell
     PositionID: =>Position.redwood
@@ -164,7 +147,6 @@ PositionDescription:
 
   trinity_web:
     Pages:
-      - =>Page.people
       - =>Page.php
       - =>Page.devsecops
       - =>Page.shell
@@ -172,15 +154,3 @@ PositionDescription:
     PositionID: =>Position.trinity
     Content: |
       Marketing for small local businesses in the Midlands. Created over 150 unique websites with only 1 other (front-end) developer during 18 month period, including a business `social network` resource for Solihull council.
-
-  computerguy_web:
-    Pages:
-      - =>Page.web
-      - =>Page.people
-      - =>Page.php
-      - =>Page.devsecops
-      - =>Page.shell
-    PositionID: =>Position.computerguy
-    Content: |
-      I created (or amended) custom open source web scripts in PHP, and developed JavaScript for web applications. I also designed & developed Windows-based software to work with a cost-effective (Linux) database server, for managing stock/sales, etc.
-      I created servers that I configured to run; databases for CRM and product management, IMAP/SMTP mail services, squid proxy hosts, file sharing (SMB) and domain controller services. I also offered remote support & hardware maintenance of all combinations of Apple/Linux/Windows desktop/laptop/servers. Where possible, I helped people with advice to customers/suppliers regarding technical/sales issues, gave advice on products, and helped to solve any other IT-related issues.
